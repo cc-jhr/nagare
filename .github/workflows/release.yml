@@ -23,7 +23,7 @@ jobs:
       - name: Execute tests and upload release
         env:
           GH_PACKAGES_RELEASE_TOKEN: ${{ secrets.PACKAGES_RELEASE_TOKEN }}
-        run: ./gradlew test publish -Prelease.version=$RELEASE_VERSION
+        run: ./gradlew test publish -Prelease.version=$RELEASE_VERSION --debug
       - name: Generate API documentation
         run: ./gradlew dokkaHtml
       - name: Deploy
