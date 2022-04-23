@@ -1,3 +1,5 @@
+[![Build](https://github.com/cc-jhr/nagare/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/cc-jhr/nagare/actions/workflows/build.yml)
+
 # nagare
 
 Nagare (流れ) is japanese and means "flow" / "stream". This is an assertion/matcher library for kotlin using infix functions.
