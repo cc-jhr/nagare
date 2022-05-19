@@ -39,3 +39,23 @@ private fun isOdd() {
         it `is` Odd
     }
 }
+
+private fun isNotEven() {
+    // given
+    val obj = 11
+
+    // when
+    obj mustSatisfy {
+        it isNot Even
+    }
+}
+
+private fun isNotOdd() {
+    // given
+    val obj = 12
+
+    // when
+    obj mustSatisfy {
+        it isNot Odd
+    }
+}
