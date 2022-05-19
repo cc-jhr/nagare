@@ -4,7 +4,7 @@ fun contains() {
     // given
     val list = listOf("List", "of", "words.")
 
-    // when
+    // then
     list mustSatisfy {
         it contains "of"
     }
@@ -14,7 +14,7 @@ fun notContains() {
     // given
     val list = listOf("List", "of", "words.")
 
-    // when
+    // then
     list mustSatisfy {
         it notContains "world"
     }

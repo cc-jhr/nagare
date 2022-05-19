@@ -4,7 +4,7 @@ fun `isNull`() {
     // given
     val obj: String? = null
 
-    // when
+    // then
     obj mustSatisfy {
         it `is` Null
     }
@@ -14,7 +14,7 @@ fun `isNotNull`() {
     // given
     val obj = "test"
 
-    // when
+    // then
     obj mustSatisfy {
         it isNot Null
     }
@@ -24,7 +24,7 @@ fun isOfType() {
     // given
     val obj = 12
 
-    // when
+    // then
     obj mustSatisfy {
         it isOfType Int::class
     }
@@ -34,7 +34,7 @@ fun isNotOfType() {
     // given
     val obj = 12
 
-    // when
+    // then
     obj mustSatisfy {
         it isNotOfType String::class
     }
@@ -44,7 +44,7 @@ fun isEqualTo() {
     // given
     val obj = 12
 
-    // when
+    // then
     obj mustSatisfy {
         it isEqualTo 12
     }
@@ -54,7 +54,7 @@ fun isNotEqualTo() {
     // given
     val obj = 12
 
-    // when
+    // then
     obj mustSatisfy {
         it isNotEqualTo 13
     }
@@ -64,7 +64,7 @@ fun isSameAs() {
     // given
     val obj = 12 to "content"
 
-    // when
+    // then
     obj mustSatisfy {
         it isSameAs obj
     }
@@ -74,7 +74,7 @@ fun isNotSameAs() {
     // given
     val obj = 12 to "content"
 
-    // when
+    // then
     obj mustSatisfy {
         it isNotSameAs 12 to "content"
     }

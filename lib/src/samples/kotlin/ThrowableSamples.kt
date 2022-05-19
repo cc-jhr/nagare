@@ -6,14 +6,14 @@ private fun expectsException() {
     // given
     val obj: String? = null
 
-    // when
+    // then
     val result = expectsException<NullPointerException> {
         obj!!.length
     }
 }
 
 private fun hasMessage() {
-    // when
+    // then
     val result = expectsException<NullPointerException> {
         throw NullPointerException("message here")
     }

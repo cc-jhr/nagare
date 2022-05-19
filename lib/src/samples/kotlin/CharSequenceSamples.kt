@@ -4,7 +4,7 @@ fun hasLength() {
     // given
     val obj = "test"
 
-    // when
+    // then
     obj mustSatisfy {
         it hasLength 4
     }
@@ -14,7 +14,7 @@ fun `isNotEmpty`() {
     // given
     val obj = "test"
 
-    // when
+    // then
     obj mustSatisfy {
         it isNot Empty
     }
@@ -24,7 +24,7 @@ fun `isNotBlank`() {
     // given
     val obj = "test"
 
-    // when
+    // then
     obj mustSatisfy {
         it isNot Blank
     }
@@ -34,7 +34,7 @@ fun `isBlank`() {
     // given
     val obj = "    "
 
-    // when
+    // then
     obj mustSatisfy {
         it `is` Blank
     }
@@ -44,7 +44,7 @@ fun `isEmpty`() {
     // given
     val obj = ""
 
-    // when
+    // then
     obj mustSatisfy {
         it `is` Empty
     }
