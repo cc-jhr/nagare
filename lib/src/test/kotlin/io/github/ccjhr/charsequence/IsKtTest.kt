@@ -24,57 +24,63 @@ internal class IsKtTest {
         assertEquals("Object for assertion is null.", result.message)
     }
 
-    @Test
-    fun `fails for Blank`() {
-        // given
-        val obj = "test"
+    internal class BlankTests {
 
-        // when
-        val result = expectsException<AssertionError> {
+        @Test
+        fun `fails for Blank`() {
+            // given
+            val obj = "test"
+
+            // when
+            val result = expectsException<AssertionError> {
+                obj mustSatisfy {
+                    it `is` Blank
+                }
+            }
+
+            // then
+            assertEquals("Expecting CharSequence to be <blank>, but it was not.", result.message)
+        }
+
+        @Test
+        fun `succeeds for Blank`() {
+            // given
+            val obj = "    "
+
+            // when
             obj mustSatisfy {
                 it `is` Blank
             }
         }
-
-        // then
-        assertEquals("Expecting CharSequence to be <blank>, but it was not.", result.message)
     }
 
-    @Test
-    fun `succeeds for Blank`() {
-        // given
-        val obj = "    "
+    internal class EmptyTests {
 
-        // when
-        obj mustSatisfy {
-            it `is` Blank
+        @Test
+        fun `fails for Empty`() {
+            // given
+            val obj = "test"
+
+            // when
+            val result = expectsException<AssertionError> {
+                obj mustSatisfy {
+                    it `is` Empty
+                }
+            }
+
+            // then
+            assertEquals("Expecting CharSequence to be <empty>, but it was not.", result.message)
         }
-    }
 
-    @Test
-    fun `fails for Empty`() {
-        // given
-        val obj = "test"
+        @Test
+        fun `succeeds for Empty`() {
+            // given
+            val obj = ""
 
-        // when
-        val result = expectsException<AssertionError> {
+            // when
             obj mustSatisfy {
                 it `is` Empty
             }
-        }
-
-        // then
-        assertEquals("Expecting CharSequence to be <empty>, but it was not.", result.message)
-    }
-
-    @Test
-    fun `succeeds for Empty`() {
-        // given
-        val obj = ""
-
-        // when
-        obj mustSatisfy {
-            it `is` Empty
         }
     }
 }
