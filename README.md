@@ -8,7 +8,7 @@ It is easily extendable using extension functions. You can use it with both juni
 ## Setup
 
 In order to use this library you need a github account and a repository read token.
-When logged-in open the [personal tokens page](https://github.com/settings/tokens). Create a new token having
+When logged-in open the [personal access tokens page](https://github.com/settings/tokens). Create a new token having
 `read:packages` as the only permission.
 
 ### Gradle - kotlin-dsl
@@ -32,7 +32,7 @@ Add the dependency to your `dependencies` block:
 
 ```gradle
 dependencies {
-    testImplementation("io.github.ccjhr:nagare:1.0.0")
+    testImplementation("io.github.ccjhr:nagare:VERSION")
 }
 ```
 
