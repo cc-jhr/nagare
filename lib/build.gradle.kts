@@ -37,6 +37,7 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
 }
 
 tasks.dokkaHtml.configure {
+    moduleName.set("${rootProject.name} $version")
     outputDirectory.set(buildDir.resolve("dokka"))
     dokkaSourceSets {
         configureEach {
