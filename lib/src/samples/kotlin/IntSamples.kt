@@ -19,3 +19,23 @@ private fun isLessThan() {
         it isLessThan 12
     }
 }
+
+private fun isEven() {
+    // given
+    val obj = 12
+
+    // when
+    obj mustSatisfy {
+        it `is` Even
+    }
+}
+
+private fun isOdd() {
+    // given
+    val obj = 11
+
+    // when
+    obj mustSatisfy {
+        it `is` Odd
+    }
+}
