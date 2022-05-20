@@ -14,7 +14,7 @@ import kotlin.test.fail
  * @sample io.github.ccjhr.samples.any.isNull
  */
 inline infix fun <reified T> AssertionContext<T>.`is`(adjective: AnyAssertionAdjective) {
-    when(adjective) {
-        Null -> if(this.content != null) fail("Expecting object to be null, but it's not.")
+    when (adjective) {
+        Null -> if (this.content != null) fail("Expecting object to be null, but it's not.")
     }
 }

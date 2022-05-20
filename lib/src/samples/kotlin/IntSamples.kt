@@ -1,4 +1,4 @@
-package io.github.ccjhr.samples.int
+package io.github.ccjhr.samples.number.int
 
 private fun isGreaterThan() {
     // given
@@ -30,16 +30,6 @@ private fun isEven() {
     }
 }
 
-private fun isOdd() {
-    // given
-    val obj = 11
-
-    // then
-    obj mustSatisfy {
-        it `is` Odd
-    }
-}
-
 private fun isNotEven() {
     // given
     val obj = 11
@@ -50,6 +40,16 @@ private fun isNotEven() {
     }
 }
 
+private fun isOdd() {
+    // given
+    val obj = 11
+
+    // then
+    obj mustSatisfy {
+        it `is` Odd
+    }
+}
+
 private fun isNotOdd() {
     // given
     val obj = 12
@@ -57,6 +57,46 @@ private fun isNotOdd() {
     // then
     obj mustSatisfy {
         it isNot Odd
+    }
+}
+
+private fun isPositive() {
+    // given
+    val obj = 12
+
+    // then
+    obj mustSatisfy {
+        it `is` Positive
+    }
+}
+
+private fun isNotPositive() {
+    // given
+    val obj = -12
+
+    // then
+    obj mustSatisfy {
+        it isNot Positive
+    }
+}
+
+private fun isNegative() {
+    // given
+    val obj = -12
+
+    // then
+    obj mustSatisfy {
+        it `is` Negative
+    }
+}
+
+private fun isNotNegative() {
+    // given
+    val obj = 12
+
+    // then
+    obj mustSatisfy {
+        it isNot Negative
     }
 }
 

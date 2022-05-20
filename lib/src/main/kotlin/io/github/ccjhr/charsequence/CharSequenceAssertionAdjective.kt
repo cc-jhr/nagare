@@ -5,13 +5,12 @@ package io.github.ccjhr.charsequence
  * @since 1.0.0
  * @see is
  * @see isNot
- * @sample io.github.ccjhr.samples.charsequence.isBlank
- * @sample io.github.ccjhr.samples.charsequence.isEmpty
  */
 enum class CharSequenceAssertionAdjective {
     /**
      * A [CharSequence] which is not `null` and has a length of `0`. **example:** `""`
      * @since 1.0.0
+     * @sample io.github.ccjhr.samples.charsequence.isEmpty
      */
     Empty,
 
@@ -19,6 +18,7 @@ enum class CharSequenceAssertionAdjective {
      * A [CharSequence] which is not `null` and either has a length of `0` or only contains whitespaces.
      * **example:** `""` or `"   "`
      * @since 1.0.0
+     * @sample io.github.ccjhr.samples.charsequence.isBlank
      */
     Blank,
 }

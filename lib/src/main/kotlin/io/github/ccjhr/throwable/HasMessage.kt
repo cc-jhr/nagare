@@ -12,7 +12,7 @@ import kotlin.test.fail
  * @see expectsException
  * @sample io.github.ccjhr.samples.throwable.hasMessage
  */
-inline infix fun <reified T: Throwable?> AssertionContext<T>.hasMessage(message: String) {
+inline infix fun <reified T : Throwable?> AssertionContext<T>.hasMessage(message: String) {
     expectNotNull(this.content)
 
     if (this.content.message != message) {

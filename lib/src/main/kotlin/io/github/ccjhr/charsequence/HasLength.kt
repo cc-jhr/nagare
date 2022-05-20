@@ -12,7 +12,7 @@ import kotlin.test.fail
  * @receiver Any nullable [CharSequence].
  * @sample io.github.ccjhr.samples.charsequence.hasLength
  */
-inline infix fun <reified T: CharSequence?> AssertionContext<T>.hasLength(expectedLength: Int) {
+inline infix fun <reified T : CharSequence?> AssertionContext<T>.hasLength(expectedLength: Int) {
     expectNotNull(this.content)
 
     if (this.content.length != expectedLength) {

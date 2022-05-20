@@ -15,10 +15,10 @@ import kotlin.test.fail
  * @sample io.github.ccjhr.samples.charsequence.isNotBlank
  * @sample io.github.ccjhr.samples.charsequence.isNotEmpty
  */
-inline infix fun <reified T: CharSequence?> AssertionContext<T>.isNot(adjective: CharSequenceAssertionAdjective) {
+inline infix fun <reified T : CharSequence?> AssertionContext<T>.isNot(adjective: CharSequenceAssertionAdjective) {
     expectNotNull(this.content)
 
-    when(adjective) {
+    when (adjective) {
         Blank -> if (this.content.isBlank()) fail("Expecting CharSequence not to be <blank>, but it was.")
         Empty -> if (this.content.isEmpty()) fail("Expecting CharSequence not to be <empty>, but it was.")
     }

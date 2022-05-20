@@ -45,8 +45,15 @@ tasks.dokkaHtml.configure {
                 "src/samples/kotlin/AnySamples.kt",
                 "src/samples/kotlin/CharSequenceSamples.kt",
                 "src/samples/kotlin/CollectionSamples.kt",
+                "src/samples/kotlin/DoubleSamples.kt",
+                "src/samples/kotlin/FloatSamples.kt",
                 "src/samples/kotlin/IntSamples.kt",
+                "src/samples/kotlin/LongSamples.kt",
+                "src/samples/kotlin/ShortSamples.kt",
                 "src/samples/kotlin/ThrowableSamples.kt",
+                "src/samples/kotlin/UIntSamples.kt",
+                "src/samples/kotlin/ULongSamples.kt",
+                "src/samples/kotlin/UShortSamples.kt",
             )
         }
     }

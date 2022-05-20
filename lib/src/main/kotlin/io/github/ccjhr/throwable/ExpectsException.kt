@@ -8,7 +8,7 @@ package io.github.ccjhr.throwable
  * @throws [RuntimeException] In case the exception which was thrown is of type [T] or no exception was thrown at all.
  * @sample io.github.ccjhr.samples.throwable.expectsException
  */
-inline fun <reified T: Throwable> expectsException(invocation: () -> Any): T {
+inline fun <reified T : Throwable> expectsException(invocation: () -> Any): T {
     try {
         invocation.invoke()
     } catch (e: Throwable) {

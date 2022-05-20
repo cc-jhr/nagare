@@ -6,4 +6,4 @@ package io.github.ccjhr
  * @param content Object under test.
  * @see mustSatisfy
  */
-data class AssertionContext<T: Any?>(val content: T)
+data class AssertionContext<T : Any?>(val content: T)
