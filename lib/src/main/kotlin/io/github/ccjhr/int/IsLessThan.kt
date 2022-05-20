@@ -1,6 +1,7 @@
 package io.github.ccjhr.int
 
 import io.github.ccjhr.AssertionContext
+import io.github.ccjhr.expectNotNull
 import kotlin.test.fail
 
 /**
@@ -13,7 +14,8 @@ import kotlin.test.fail
  * @sample io.github.ccjhr.samples.int.isLessThan
  */
 inline infix fun <reified T: Int?> AssertionContext<T>.isLessThan(obj: Int) {
-    requireNotNull(this.content) { "Object for assertion is null." }
+    expectNotNull(this.content)
+
     if (this.content >= obj) {
         fail("Expecting <${this.content}> to be less than <$obj>, but it's not.")
     }

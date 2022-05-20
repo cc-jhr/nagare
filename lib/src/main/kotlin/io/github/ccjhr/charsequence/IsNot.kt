@@ -2,6 +2,7 @@ package io.github.ccjhr.charsequence
 
 import io.github.ccjhr.AssertionContext
 import io.github.ccjhr.charsequence.CharSequenceAssertionAdjective.*
+import io.github.ccjhr.expectNotNull
 import kotlin.test.fail
 
 /**
@@ -15,7 +16,8 @@ import kotlin.test.fail
  * @sample io.github.ccjhr.samples.charsequence.isNotEmpty
  */
 inline infix fun <reified T: CharSequence?> AssertionContext<T>.isNot(adjective: CharSequenceAssertionAdjective) {
-    requireNotNull(this.content) { "Object for assertion is null." }
+    expectNotNull(this.content)
+
     when(adjective) {
         Blank -> if (this.content.isBlank()) fail("Expecting CharSequence not to be <blank>, but it was.")
         Empty -> if (this.content.isEmpty()) fail("Expecting CharSequence not to be <empty>, but it was.")

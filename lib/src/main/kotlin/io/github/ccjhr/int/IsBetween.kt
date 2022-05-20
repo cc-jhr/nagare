@@ -1,6 +1,7 @@
 package io.github.ccjhr.int
 
 import io.github.ccjhr.AssertionContext
+import io.github.ccjhr.expectNotNull
 import kotlin.test.fail
 
 /**
@@ -14,7 +15,7 @@ import kotlin.test.fail
  * @sample io.github.ccjhr.samples.int.isBetween
  */
 inline infix fun <reified T: Int?> AssertionContext<T>.isBetween(lowerBoundary: Int): IsBetweenContext {
-    requireNotNull(this.content) { "Object for assertion is null." }
+    expectNotNull(this.content)
 
     if (this.content <= lowerBoundary) {
         fail("Value <${this.content}> violates lower boundary. It must be greater than <$lowerBoundary>")
@@ -57,7 +58,8 @@ value class IsBetweenContext(
  * @sample io.github.ccjhr.samples.int.isBetween
  */
 inline infix fun <reified T : Int?> AssertionContext<T>.isBetween(range: IntRange) {
-    requireNotNull(this.content) { "Object for assertion is null." }
+    expectNotNull(this.content)
+
     if (this.content <= range.first || this.content >= range.last) {
         fail("Expecting <${this.content}> to be greater than <${range.first}> and less than <${range.last}>, but it's not.")
     }
@@ -72,7 +74,8 @@ inline infix fun <reified T : Int?> AssertionContext<T>.isBetween(range: IntRang
  * @sample io.github.ccjhr.samples.int.isBetween
  */
 inline infix fun <reified T : Int?> AssertionContext<T>.isBetween(range: Pair<Int, Int>) {
-    requireNotNull(this.content) { "Object for assertion is null." }
+    expectNotNull(this.content)
+
     if (this.content <= range.first || this.content >= range.second) {
         fail("Expecting <${this.content}> to be greater than <${range.first}> and less than <${range.second}>, but it's not.")
     }

@@ -1,6 +1,7 @@
 package io.github.ccjhr.collection
 
 import io.github.ccjhr.AssertionContext
+import io.github.ccjhr.expectNotNull
 import kotlin.test.fail
 
 /**
@@ -13,7 +14,8 @@ import kotlin.test.fail
  * @sample io.github.ccjhr.samples.collection.notContains
  */
 inline infix fun <reified T> AssertionContext<out Collection<T>?>.notContains(obj: T) {
-    requireNotNull(this.content) { "Object for assertion is null." }
+    expectNotNull(this.content)
+
     if (this.content.contains(obj)) {
         fail("Expecting <${this.content}> to not contain <$obj>, but it does.")
     }

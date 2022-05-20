@@ -1,6 +1,8 @@
 package io.github.ccjhr.any
 
 import io.github.ccjhr.AssertionContext
+import io.github.ccjhr.expectNotNull
+import io.github.ccjhr.instanceString
 import kotlin.test.fail
 
 /**
@@ -13,10 +15,9 @@ import kotlin.test.fail
  * @sample io.github.ccjhr.samples.any.isSameAs
  */
 inline infix fun <reified T> AssertionContext<T>.isSameAs(expectedInstance: Any) {
-    requireNotNull(this.content) { "Object for assertion is null." }
+    expectNotNull(this.content)
+
     if (this.content !== expectedInstance) {
-        fail("Expecting <${referenceString(this.content)}> and <${referenceString(expectedInstance)}> to point to the same object, but they don't.")
+        fail("Expecting <${instanceString(this.content)}> and <${instanceString(expectedInstance)}> to point to the same object, but they don't.")
     }
 }
-
-fun referenceString(obj: Any) = "${obj::class.qualifiedName}@${System.identityHashCode(obj)}"

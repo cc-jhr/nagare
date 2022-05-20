@@ -1,6 +1,7 @@
 package io.github.ccjhr.throwable
 
 import io.github.ccjhr.AssertionContext
+import io.github.ccjhr.expectNotNull
 import kotlin.test.fail
 
 /**
@@ -12,7 +13,8 @@ import kotlin.test.fail
  * @sample io.github.ccjhr.samples.throwable.hasMessage
  */
 inline infix fun <reified T: Throwable?> AssertionContext<T>.hasMessage(message: String) {
-    requireNotNull(this.content) { "Object for assertion is null." }
+    expectNotNull(this.content)
+
     if (this.content.message != message) {
         fail("Expecting <${this.content.message}> to be equal to <$message>, but it's not.")
     }

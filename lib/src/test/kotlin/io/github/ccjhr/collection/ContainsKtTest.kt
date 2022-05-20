@@ -13,14 +13,14 @@ internal class ContainsKtTest {
         val obj: Collection<String>? = null
 
         // when
-        val result = expectsException<IllegalArgumentException> {
+        val result = expectsException<AssertionError> {
             obj mustSatisfy {
                 it contains "test"
             }
         }
 
         // then
-        assertEquals("Object for assertion is null.", result.message)
+        assertEquals("Object under test is null.", result.message)
     }
 
     @Test

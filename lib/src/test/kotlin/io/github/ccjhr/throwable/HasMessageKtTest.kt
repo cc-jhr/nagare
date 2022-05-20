@@ -12,14 +12,14 @@ internal class HasMessageKtTest {
         val obj: Throwable? = null
 
         // when
-        val result = expectsException<IllegalArgumentException> {
+        val result = expectsException<AssertionError> {
             obj mustSatisfy {
                 it hasMessage "message"
             }
         }
 
         // then
-        assertEquals("Object for assertion is null.", result.message)
+        assertEquals("Object under test is null.", result.message)
     }
 
     @Test

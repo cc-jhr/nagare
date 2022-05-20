@@ -15,14 +15,14 @@ internal class IsNotKtTest {
         val obj: String? = null
 
         // when
-        val result = expectsException<IllegalArgumentException> {
+        val result = expectsException<AssertionError> {
             obj mustSatisfy {
                 it isNot Blank
             }
         }
 
         // then
-        assertEquals("Object for assertion is null.", result.message)
+        assertEquals("Object under test is null.", result.message)
     }
 
     internal class BlankTests {

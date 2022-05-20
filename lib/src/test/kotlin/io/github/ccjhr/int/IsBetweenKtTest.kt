@@ -2,7 +2,7 @@ package io.github.ccjhr.int
 
 import io.github.ccjhr.mustSatisfy
 import io.github.ccjhr.throwable.expectsException
-import org.testng.annotations.Test
+import kotlin.test.Test
 import kotlin.test.assertEquals
 
 internal class IsBetweenKtTest {
@@ -13,14 +13,14 @@ internal class IsBetweenKtTest {
         val obj: Int? = null
 
         // when
-        val result = expectsException<IllegalArgumentException> {
+        val result = expectsException<AssertionError> {
             obj mustSatisfy {
                 it isBetween 10 and 12
             }
         }
 
         // then
-        assertEquals("Object for assertion is null.", result.message)
+        assertEquals("Object under test is null.", result.message)
     }
 
     @Test

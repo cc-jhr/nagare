@@ -111,7 +111,8 @@ a kotlin function which uses contracts like `requireNotNull` if your resulting o
 
 ```kotlin
 inline infix fun <reified T : MyObj?> AssertionContext<T>.hasTitleMatching(regex: Regex) {
-    requireNotNull(this.content) { "Object for assertion is null." }
+    expectNotNull(this.content)
+    
     if (!regex.matches(this.content.title)) {
         fail("Expecting title <${this.content.title}> to match <${regex.pattern}>, but it doesn't.")
     }
@@ -155,7 +156,8 @@ is not blank.
 
 ```kotlin
 inline infix fun <reified T : MyObj?> AssertionContext<T>.hasToBe(adjective: MyObjAssertionAdjective) {
-    requireNotNull(this.content) { "Object for assertion is null." }
+    expectNotNull(this.content)
+    
     when(adjective) {
         Valid -> if (content.number <= 0 || content.title.isBlank()) fail("Object is not valid.")
     }

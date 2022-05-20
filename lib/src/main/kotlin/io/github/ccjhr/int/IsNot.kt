@@ -3,6 +3,7 @@ package io.github.ccjhr.int
 import io.github.ccjhr.AssertionContext
 import io.github.ccjhr.any.AnyAssertionAdjective
 import io.github.ccjhr.any.AnyAssertionAdjective.*
+import io.github.ccjhr.expectNotNull
 import io.github.ccjhr.int.IntAssertionAdjectives.Even
 import io.github.ccjhr.int.IntAssertionAdjectives.Odd
 import kotlin.test.fail
@@ -18,7 +19,8 @@ import kotlin.test.fail
  * @sample io.github.ccjhr.samples.int.isNotEven
  */
 inline infix fun <reified T: Int?> AssertionContext<T>.isNot(adjective: IntAssertionAdjectives) {
-    requireNotNull(this.content) { "Object for assertion is null." }
+    expectNotNull(this.content)
+
     when(adjective) {
         Odd -> if(this.content % 2 != 0) fail("Expecting <${this.content}> not to be odd, but it is.")
         Even -> if(this.content % 2 == 0) fail("Expecting <${this.content}> not to be even, but it is.")

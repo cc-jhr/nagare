@@ -1,6 +1,7 @@
 package io.github.ccjhr.any
 
 import io.github.ccjhr.AssertionContext
+import io.github.ccjhr.expectNotNull
 import kotlin.test.fail
 
 /**
@@ -13,7 +14,8 @@ import kotlin.test.fail
  * @sample io.github.ccjhr.samples.any.isEqualTo
  */
 inline infix fun <reified T> AssertionContext<T>.isEqualTo(other: Any) {
-    requireNotNull(this.content) { "Object for assertion is null." }
+    expectNotNull(this.content)
+
     if (this.content != other) {
         fail("Expecting <${this.content}> to be equal to <$other>, but it's not.")
     }

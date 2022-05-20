@@ -13,14 +13,14 @@ internal class IsNotOfTypeKtTest {
         val obj: Int? = null
 
         // when
-        val result = expectsException<IllegalArgumentException> {
+        val result = expectsException<AssertionError> {
             obj mustSatisfy {
                 it isNotOfType Int::class
             }
         }
 
         // then
-        assertEquals("Object for assertion is null.", result.message)
+        assertEquals("Object under test is null.", result.message)
     }
 
     @Test

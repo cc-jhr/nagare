@@ -4,7 +4,7 @@ import io.github.ccjhr.int.IntAssertionAdjectives.Even
 import io.github.ccjhr.int.IntAssertionAdjectives.Odd
 import io.github.ccjhr.mustSatisfy
 import io.github.ccjhr.throwable.expectsException
-import org.testng.annotations.Test
+import kotlin.test.Test
 import kotlin.test.assertEquals
 
 internal class IsNotKtTest {
@@ -15,14 +15,14 @@ internal class IsNotKtTest {
         val obj: Int? = null
 
         // when
-        val result = expectsException<IllegalArgumentException> {
+        val result = expectsException<AssertionError> {
             obj mustSatisfy {
                 it isNot Odd
             }
         }
 
         // then
-        assertEquals("Object for assertion is null.", result.message)
+        assertEquals("Object under test is null.", result.message)
     }
 
     internal class OddTests {

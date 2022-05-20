@@ -1,6 +1,7 @@
 package io.github.ccjhr.any
 
 import io.github.ccjhr.AssertionContext
+import io.github.ccjhr.expectNotNull
 import kotlin.reflect.KClass
 import kotlin.test.fail
 
@@ -14,7 +15,8 @@ import kotlin.test.fail
  * @sample io.github.ccjhr.samples.any.isOfType
  */
 inline infix fun <reified T> AssertionContext<T>.isOfType(type: KClass<*>) {
-    requireNotNull(this.content) { "Object for assertion is null." }
+    expectNotNull(this.content)
+
     if (!type.isInstance(this.content)) {
         fail("Expecting object to be of type <${type.qualifiedName}>, but was <${this.content!!::class.qualifiedName}>.")
     }
