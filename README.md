@@ -54,6 +54,7 @@ Various criteria can be described depending on the class type. `Int` for example
     fun `usage test`() {
         12 mustSatisfy {
             it isGreaterThan 6
+            it isBetween 10..20
         }
     }
 ```

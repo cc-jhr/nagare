@@ -106,7 +106,6 @@ private fun isBetween() {
 
     // then
     obj mustSatisfy {
-        it isBetween 10f and 20f
-        it isBetween (10f to 20f)
+        it isBetween 10f..20f
     }
 }

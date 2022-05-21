@@ -106,8 +106,6 @@ private fun isBetween() {
 
     // then
     obj mustSatisfy {
-        it isBetween 10.toShort() and 20.toShort()
         it isBetween 10.toShort()..20.toShort()
-        it isBetween (10.toShort() to 20.toShort())
     }
 }

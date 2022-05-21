@@ -15,7 +15,7 @@ internal class IsBetweenKtTest {
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it isBetween 10 and 12
+                it isBetween 10..12
             }
         }
 
@@ -24,67 +24,67 @@ internal class IsBetweenKtTest {
     }
 
     @Test
-    fun `fails because lower boundary is violates by smaller value`() {
+    fun `fails because lower boundary is violated by smaller value`() {
         // given
-        val obj = 12
+        val obj = 9
 
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it isBetween 15
+                it isBetween 10..20
             }
         }
 
         // then
-        assertEquals("Value <12> violates lower boundary. It must be greater than <15>", result.message)
+        assertEquals("Expecting <9> to be greater than <10> and less than <20>", result.message)
     }
 
     @Test
-    fun `fails because lower boundary is violates by equal value`() {
+    fun `fails because lower boundary is violated by equal value`() {
         // given
-        val obj = 12
+        val obj = 10
 
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it isBetween 12
+                it isBetween 10..20
             }
         }
 
         // then
-        assertEquals("Value <12> violates lower boundary. It must be greater than <12>", result.message)
+        assertEquals("Expecting <10> to be greater than <10> and less than <20>", result.message)
     }
 
     @Test
-    fun `fails because upper boundary is violates by smaller value`() {
+    fun `fails because upper boundary is violated by smaller value`() {
         // given
         val obj = 21
 
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it isBetween 10 and 20
+                it isBetween 10..20
             }
         }
 
         // then
-        assertEquals("Value <21> violates upper boundary. It must be less than <20>", result.message)
+        assertEquals("Expecting <21> to be greater than <10> and less than <20>", result.message)
     }
 
     @Test
-    fun `fails because upper boundary is violates by equal value`() {
+    fun `fails because upper boundary is violated by equal value`() {
         // given
-        val obj = 12
+        val obj = 20
 
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it isBetween 10 and 12
+                it isBetween 10..20
             }
         }
 
         // then
-        assertEquals("Value <12> violates upper boundary. It must be less than <12>", result.message)
+        assertEquals("Expecting <20> to be greater than <10> and less than <20>", result.message)
     }
 
     @Test
@@ -94,7 +94,7 @@ internal class IsBetweenKtTest {
 
         // when
         obj mustSatisfy {
-            it isBetween 10 and 20
+            it isBetween 10..20
         }
     }
 }
