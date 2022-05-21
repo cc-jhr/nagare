@@ -5,7 +5,8 @@ import io.github.ccjhr.expectNotNull
 import kotlin.test.fail
 
 /**
- * Verifies that the [Collection] under test contains all of the given items.
+ * Verifies that the [Collection] under test contains all of the given items. It is valid that the [Collection] under
+ * can contain even more items which are not part of [expectedElements].
  * @since 1.1.0
  * @param expectedElements A [Collection] containing items which are expected to exist in the [Collection] under test.
  * @throws AssertionError In case the assertion fails.

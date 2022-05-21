@@ -43,7 +43,7 @@ internal class ContainsAllOfKtTest {
     @Test
     fun succeeds() {
         // given
-        val list = listOf("List", "of", "words.")
+        val list = listOf("List", "of", "words.", "and", "even", "more")
 
         // when
         list mustSatisfy {
