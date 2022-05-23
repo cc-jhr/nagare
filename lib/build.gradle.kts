@@ -1,8 +1,10 @@
 plugins {
     id("org.jetbrains.kotlin.jvm") version "1.6.21"
+    id("org.jetbrains.dokka") version "1.6.21"
     `java-library` // Apply the java-library plugin for API and implementation separation.
     `maven-publish`
-    id("org.jetbrains.dokka") version "1.6.21"
+    jacoco
+    id("com.github.nbaztec.coveralls-jacoco") version "1.2.14"
 }
 
 val githubUsername by extra { System.getenv("GH_USERNAME") ?: project.findProperty("GH_USERNAME") as String? ?: "cc-jhr" }
@@ -28,6 +30,9 @@ dependencies {
 
 tasks.withType<Test> {
     useTestNG()
+    reports.html.required.set(false)
+    reports.junitXml.required.set(false)
+    maxParallelForks = Runtime.getRuntime().availableProcessors()
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
@@ -111,4 +116,17 @@ publishing {
             }
         }
     }
+}
+
+coverallsJacoco {
+    reportPath = "$buildDir/reports/jacoco/test/jacocoFullReport.xml"
+}
+
+tasks.jacocoTestReport {
+    reports {
+        html.required.set(false)
+        xml.required.set(true)
+        xml.outputLocation.set(file("$buildDir/reports/jacoco/test/jacocoFullReport.xml"))
+    }
+    dependsOn(allprojects.map { it.tasks.named<Test>("test") })
 }
