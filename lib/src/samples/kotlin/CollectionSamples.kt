@@ -39,3 +39,13 @@ fun containsNoneOf() {
         it containsNoneOf mutableListOf("hello", "world")
     }
 }
+
+fun hasSize() {
+    // given
+    val list = listOf("List", "of", "words.")
+
+    // when
+    list mustSatisfy {
+        it hasSize 3
+    }
+}
