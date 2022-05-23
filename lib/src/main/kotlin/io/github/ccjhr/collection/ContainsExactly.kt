@@ -57,7 +57,8 @@ inline infix fun <reified T> AssertionContext<out Collection<T>?>.containsExactl
  * @since 1.1.0
  * @param adjective The [ContainsExactlyAssertionAdjective] that additionally applies to the [Collection] under test.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [Collection] containing any nullable or non-nullable type.
+ * @receiver An instance of [ContainsExactlyContext] which contains both the [Collection] und test as well as the
+ * [Collection] of expeceted elements.
  * @see containsExactly
  * @sample io.github.ccjhr.samples.collection.containsExactlyAndInTheSameOrder
  */
