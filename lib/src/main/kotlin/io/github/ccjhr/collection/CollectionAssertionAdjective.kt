@@ -10,5 +10,10 @@ import io.github.ccjhr.charsequence.isNot
  * @see isNot
  */
 enum class CollectionAssertionAdjective {
+    /**
+     * @since 1.1.0
+     * @sample io.github.ccjhr.samples.collection.isEmpty
+     * @sample io.github.ccjhr.samples.collection.isNotEmpty
+     */
     Empty,
 }

@@ -7,7 +7,7 @@ import kotlin.test.fail
 /**
  * Verifies that the [Collection] under test is of given size.
  * @since 1.1.0
- * @param expectedSize The element the [Collection] under test is supposed to contain.
+ * @param expectedSize Expected size of the [Collection] under test.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable [Collection] containing any nullable or non-nullable type.
  * @sample io.github.ccjhr.samples.collection.hasSize

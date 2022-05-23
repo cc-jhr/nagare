@@ -26,7 +26,7 @@ fun containsAllOf() {
 
     // when
     list mustSatisfy {
-        it containsAllOf mutableListOf("of", "words.", "List")
+        it containsAllOf setOf("of", "words.", "List")
     }
 }
 
@@ -36,7 +36,7 @@ fun containsNoneOf() {
 
     // when
     list mustSatisfy {
-        it containsNoneOf mutableListOf("hello", "world")
+        it containsNoneOf setOf("hello", "world")
     }
 }
 
@@ -67,5 +67,25 @@ fun isNotEmpty() {
     // when
     list mustSatisfy {
         it isNot Empty
+    }
+}
+
+fun containsExactly() {
+    // given
+    val list = listOf("List", "of", "words.")
+
+    // when
+    list mustSatisfy {
+        it containsExactly listOf("of", "words.", "List")
+    }
+}
+
+fun containsExactlyAndInTheSameOrder() {
+    // given
+    val list = listOf("List", "of", "words.")
+
+    // when
+    list mustSatisfy {
+        it containsExactly listOf("List", "of", "words.") and InTheSameOrder
     }
 }

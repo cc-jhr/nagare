@@ -1,13 +1,11 @@
 package io.github.ccjhr.collection
 
-import io.github.ccjhr.Experimental
 import io.github.ccjhr.collection.ContainsExactlyAssertionAdjective.InTheSameOrder
 import io.github.ccjhr.mustSatisfy
 import io.github.ccjhr.throwable.expectsException
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-@OptIn(Experimental::class)
 internal class ContainsExactlyKtTest {
 
     internal class ContainsExactlyTests {
@@ -145,7 +143,7 @@ internal class ContainsExactlyKtTest {
 
             // when
             list mustSatisfy {
-                it containsExactly mutableListOf("of", "words.", "List")
+                it containsExactly listOf("of", "words.", "List")
             }
         }
     }
