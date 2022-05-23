@@ -1,7 +1,7 @@
 package io.github.ccjhr.number
 
 /**
- * Adjectives that may or may not apply to any unsigned number.
+ * Adjectives that are expected to apply to any unsigned number.
  * @since 1.1.0
  * @see io.github.ccjhr.number.uint.is
  * @see io.github.ccjhr.number.uint.isNot

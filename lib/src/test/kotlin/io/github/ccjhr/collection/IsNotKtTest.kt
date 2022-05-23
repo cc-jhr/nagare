@@ -1,11 +1,12 @@
 package io.github.ccjhr.collection
 
+import io.github.ccjhr.collection.CollectionAssertionAdjective.Empty
 import io.github.ccjhr.mustSatisfy
 import io.github.ccjhr.throwable.expectsException
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-internal class HasSizeKtTest {
+internal class IsNotKtTest {
 
     @Test
     fun `throws exception if the object is null`() {
@@ -15,7 +16,7 @@ internal class HasSizeKtTest {
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it hasSize 1
+                it isNot Empty
             }
         }
 
@@ -26,17 +27,17 @@ internal class HasSizeKtTest {
     @Test
     fun fails() {
         // given
-        val list = listOf("List", "of", "words.")
+        val list = emptyList<Int>()
 
         // when
         val result = expectsException<AssertionError> {
             list mustSatisfy {
-                it hasSize 2
+                it isNot Empty
             }
         }
 
         // then
-        assertEquals("Expecting Collection to be of size <2>, but has size <3>.", result.message)
+        assertEquals("Expecting Collection not to be <empty>, but it was.", result.message)
     }
 
     @Test
@@ -46,7 +47,7 @@ internal class HasSizeKtTest {
 
         // when
         list mustSatisfy {
-            it hasSize 3
+            it isNot Empty
         }
     }
 }

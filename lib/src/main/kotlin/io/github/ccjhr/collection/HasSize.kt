@@ -16,6 +16,6 @@ inline infix fun <reified T> AssertionContext<out Collection<T>?>.hasSize(expect
     expectNotNull(this.content)
 
     if (this.content.size != expectedSize) {
-        fail("Expecting collection to be of size <$expectedSize>, but has size <${this.content.size}>.")
+        fail("Expecting Collection to be of size <$expectedSize>, but has size <${this.content.size}>.")
     }
 }

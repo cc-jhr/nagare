@@ -1,7 +1,7 @@
 package io.github.ccjhr.charsequence
 
 /**
- * Adjectives that may or may not apply to a [CharSequence].
+ * Adjectives that are expected to apply to a [CharSequence].
  * @since 1.0.0
  * @see is
  * @see isNot

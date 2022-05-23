@@ -49,3 +49,23 @@ fun hasSize() {
         it hasSize 3
     }
 }
+
+fun isEmpty() {
+    // given
+    val list = emptyList<Int>()
+
+    // when
+    list mustSatisfy {
+        it `is` Empty
+    }
+}
+
+fun isNotEmpty() {
+    // given
+    val list = listOf("List", "of", "words.")
+
+    // when
+    list mustSatisfy {
+        it isNot Empty
+    }
+}

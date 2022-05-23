@@ -1,7 +1,7 @@
 package io.github.ccjhr.number
 
 /**
- * Adjectives that may or may not apply to any signed number.
+ * Adjectives that are expected to apply to any signed number.
  * @since 1.1.0
  * @see io.github.ccjhr.number.double.is
  * @see io.github.ccjhr.number.double.isNot
