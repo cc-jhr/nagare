@@ -1,7 +1,6 @@
 package io.github.ccjhr.number.long
 
 import io.github.ccjhr.mustSatisfy
-import io.github.ccjhr.number.long.isLessThan
 import io.github.ccjhr.throwable.expectsException
 import kotlin.test.Test
 import kotlin.test.assertEquals

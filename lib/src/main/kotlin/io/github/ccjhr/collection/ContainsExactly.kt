@@ -1,8 +1,6 @@
 package io.github.ccjhr.collection
 
 import io.github.ccjhr.AssertionContext
-import io.github.ccjhr.Experimental
-import io.github.ccjhr.charsequence.CharSequenceAssertionAdjective
 import io.github.ccjhr.collection.ContainsExactlyAssertionAdjective.InTheSameOrder
 import io.github.ccjhr.expectNotNull
 import kotlin.test.fail

@@ -1,7 +1,6 @@
 package io.github.ccjhr.collection
 
 import io.github.ccjhr.AssertionContext
-import io.github.ccjhr.charsequence.isNot
 import io.github.ccjhr.collection.CollectionAssertionAdjective.*
 import io.github.ccjhr.expectNotNull
 import kotlin.test.fail

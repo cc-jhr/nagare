@@ -2,8 +2,6 @@ package io.github.ccjhr.number.int
 
 import io.github.ccjhr.AssertionContext
 import io.github.ccjhr.expectNotNull
-import io.github.ccjhr.mustSatisfy
-import io.github.ccjhr.number.IsBetweenContext
 import kotlin.test.fail
 
 /**

@@ -5,7 +5,6 @@ import io.github.ccjhr.any.AnyAssertionAdjective.*
 import io.github.ccjhr.expectNotNull
 import io.github.ccjhr.number.NumberAssertionAdjectives
 import io.github.ccjhr.number.NumberAssertionAdjectives.*
-import io.github.ccjhr.number.double.isNot
 import kotlin.test.fail
 
 /**

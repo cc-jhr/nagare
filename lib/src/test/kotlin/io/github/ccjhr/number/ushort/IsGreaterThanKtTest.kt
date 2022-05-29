@@ -1,8 +1,7 @@
 package io.github.ccjhr.number.ushort
 
-import io.github.ccjhr.throwable.expectsException
 import io.github.ccjhr.mustSatisfy
-import io.github.ccjhr.number.ushort.isGreaterThan
+import io.github.ccjhr.throwable.expectsException
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
