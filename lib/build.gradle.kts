@@ -48,6 +48,7 @@ tasks.dokkaHtml.configure {
         configureEach {
             samples.from(
                 "src/samples/kotlin/AnySamples.kt",
+                "src/samples/kotlin/BooleanSamples.kt",
                 "src/samples/kotlin/CharSequenceSamples.kt",
                 "src/samples/kotlin/CollectionSamples.kt",
                 "src/samples/kotlin/DoubleSamples.kt",
