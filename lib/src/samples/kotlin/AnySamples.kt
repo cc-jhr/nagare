@@ -1,6 +1,6 @@
 package io.github.ccjhr.samples.any
 
-fun `isNull`() {
+fun isNull() {
     // given
     val obj: String? = null
 
@@ -10,7 +10,7 @@ fun `isNull`() {
     }
 }
 
-fun `isNotNull`() {
+fun isNotNull() {
     // given
     val obj = "test"
 

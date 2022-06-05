@@ -10,7 +10,7 @@ fun hasLength() {
     }
 }
 
-fun `isNotEmpty`() {
+fun isNotEmpty() {
     // given
     val obj = "test"
 
@@ -20,7 +20,7 @@ fun `isNotEmpty`() {
     }
 }
 
-fun `isNotBlank`() {
+fun isNotBlank() {
     // given
     val obj = "test"
 
@@ -30,7 +30,7 @@ fun `isNotBlank`() {
     }
 }
 
-fun `isBlank`() {
+fun isBlank() {
     // given
     val obj = "    "
 
@@ -40,7 +40,7 @@ fun `isBlank`() {
     }
 }
 
-fun `isEmpty`() {
+fun isEmpty() {
     // given
     val obj = ""
 

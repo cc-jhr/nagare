@@ -1,6 +1,6 @@
 package io.github.ccjhr.samples.charsequence
 
-fun `isTrue`() {
+fun isTrue() {
     // given
     val obj = true
 
@@ -10,7 +10,7 @@ fun `isTrue`() {
     }
 }
 
-fun `isFalse`() {
+fun isFalse() {
     // given
     val obj = false
 
@@ -20,7 +20,7 @@ fun `isFalse`() {
     }
 }
 
-fun `isNotTrue`() {
+fun isNotTrue() {
     // given
     val obj = false
 
@@ -30,7 +30,7 @@ fun `isNotTrue`() {
     }
 }
 
-fun `isNotFalse`() {
+fun isNotFalse() {
     // given
     val obj = true
 
