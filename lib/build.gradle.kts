@@ -57,6 +57,7 @@ tasks.dokkaHtml.configure {
                 "src/samples/kotlin/MapSamples.kt",
                 "src/samples/kotlin/LongSamples.kt",
                 "src/samples/kotlin/ShortSamples.kt",
+                "src/samples/kotlin/StringSamples.kt",
                 "src/samples/kotlin/ThrowableSamples.kt",
                 "src/samples/kotlin/UIntSamples.kt",
                 "src/samples/kotlin/ULongSamples.kt",
