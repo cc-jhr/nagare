@@ -25,7 +25,7 @@ jobs:
           GH_PACKAGES_RELEASE_TOKEN: ${{ secrets.PACKAGES_RELEASE_TOKEN }}
         run: ./gradlew test publish -Prelease.version=$RELEASE_VERSION
       - name: Generate API documentation
-        run: ./gradlew dokkaHtml
+        run: ./gradlew dokkaHtml -Prelease.version=$RELEASE_VERSION
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
