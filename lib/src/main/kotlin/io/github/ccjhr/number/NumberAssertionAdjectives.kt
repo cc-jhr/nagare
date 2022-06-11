@@ -2,7 +2,7 @@ package io.github.ccjhr.number
 
 /**
  * Adjectives that are expected to apply to any signed number.
- * @since 1.1.0
+ * @since 2.0.0
  * @see io.github.ccjhr.number.double.is
  * @see io.github.ccjhr.number.double.isNot
  * @see io.github.ccjhr.number.float.is
@@ -46,7 +46,7 @@ enum class NumberAssertionAdjectives {
     Even,
 
     /**
-     * @since 1.1.0
+     * @since 2.0.0
      * @sample io.github.ccjhr.samples.number.double.isPositive
      * @sample io.github.ccjhr.samples.number.double.isNotPositive
      * @sample io.github.ccjhr.samples.number.float.isPositive
@@ -61,7 +61,7 @@ enum class NumberAssertionAdjectives {
     Positive,
 
     /**
-     * @since 1.1.0
+     * @since 2.0.0
      * @sample io.github.ccjhr.samples.number.double.isNegative
      * @sample io.github.ccjhr.samples.number.double.isNotNegative
      * @sample io.github.ccjhr.samples.number.float.isNegative

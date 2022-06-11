@@ -6,7 +6,7 @@ import kotlin.test.fail
 
 /**
  * Verifies that the [Double] under test is less than the given value.
- * @since 1.1.0
+ * @since 2.0.0
  * @param obj The value which is supposed the be greater than the [Double] under test.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable [Double].

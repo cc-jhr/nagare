@@ -6,7 +6,7 @@ import kotlin.test.fail
 
 /**
  * Verifies that the [String] under test matches a given [Regex].
- * @since 1.1.0
+ * @since 2.0.0
  * @param regex The [Regex] that the [String] under test is supposed to match.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable [String].

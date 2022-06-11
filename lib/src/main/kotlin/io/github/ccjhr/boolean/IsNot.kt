@@ -6,7 +6,7 @@ import kotlin.test.fail
 
 /**
  * Verifies that the object under test doesn't match a given [Boolean] value.
- * @since 1.1.0
+ * @since 2.0.0
  * @param value A [Boolean] value that doesn't match the object under test.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable or non-nullable [Boolean].

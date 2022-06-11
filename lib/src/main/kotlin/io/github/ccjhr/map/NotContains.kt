@@ -6,7 +6,7 @@ import kotlin.test.fail
 
 /**
  * Verifies that the [Map] under test doesn't contain a specific element.
- * @since 1.1.0
+ * @since 2.0.0
  * @param entry The element the [Map] under test is not supposed to contain.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable [Map] containing any nullable or non-nullable type for key and value.

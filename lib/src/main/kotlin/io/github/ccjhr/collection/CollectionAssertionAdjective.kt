@@ -5,13 +5,13 @@ import io.github.ccjhr.charsequence.isNot
 
 /**
  * Adjectives that are expected to apply to a [Collection].
- * @since 1.1.0
+ * @since 2.0.0
  * @see is
  * @see isNot
  */
 enum class CollectionAssertionAdjective {
     /**
-     * @since 1.1.0
+     * @since 2.0.0
      * @sample io.github.ccjhr.samples.collection.isEmpty
      * @sample io.github.ccjhr.samples.collection.isNotEmpty
      */

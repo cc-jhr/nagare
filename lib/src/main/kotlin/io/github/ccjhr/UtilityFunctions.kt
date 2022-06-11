@@ -6,7 +6,7 @@ import kotlin.test.fail
 
 /**
  * Checks if an object is `null`. If the object is not `null` then kotlin contract implies that the object is not.
- * @since 1.1.0
+ * @since 2.0.0
  * @param obj Object being checked for `null`.
  * @return The unmodified object.
  * @throws AssertionError in case the object is `null`.
@@ -26,7 +26,7 @@ fun <T : Any> expectNotNull(obj: T?): T {
 
 /**
  * Creates [String] showing the instance.
- * @since 1.1.0
+ * @since 2.0.0
  * @param obj Object for which the instance string should be created.
  * @return A [String] representing the instance.
  */

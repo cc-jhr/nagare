@@ -10,7 +10,7 @@ import kotlin.test.fail
 
 /**
  * Verifies that the [UShort] under test applies to a given [UnsignedNumberAssertionAdjectives].
- * @since 1.1.0
+ * @since 2.0.0
  * @param adjective The [UnsignedNumberAssertionAdjectives] that applies to the object under test.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable [UShort].

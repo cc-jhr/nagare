@@ -7,7 +7,7 @@ import kotlin.test.fail
 /**
  * Verifies that the [Float] under test is between a lower and an upper boundary.
  * To be successful the value must not be equal to the lower or upper boundary.
- * @since 1.1.0
+ * @since 2.0.0
  * @param boundaries Contains the lower and upper boundary.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable [Float].

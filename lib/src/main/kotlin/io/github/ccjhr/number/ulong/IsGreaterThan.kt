@@ -6,7 +6,7 @@ import kotlin.test.fail
 
 /**
  * Verifies that the [ULong] under test is greater than the given value.
- * @since 1.1.0
+ * @since 2.0.0
  * @param obj The value which is supposed the be less than the [ULong] under test.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable [ULong].
