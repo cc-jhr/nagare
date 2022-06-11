@@ -42,10 +42,13 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
 }
 
 tasks.dokkaHtml.configure {
-    moduleName.set("${rootProject.name} ${project.version}")
+    moduleName.set("${rootProject.name}")
     outputDirectory.set(buildDir.resolve("dokka"))
     dokkaSourceSets {
         configureEach {
+            includes.from(
+                "README.md"
+            )
             samples.from(
                 "src/samples/kotlin/AnySamples.kt",
                 "src/samples/kotlin/BooleanSamples.kt",
