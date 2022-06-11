@@ -2,7 +2,7 @@ package io.github.ccjhr.string
 
 import io.github.ccjhr.mustSatisfy
 import io.github.ccjhr.throwable.expectsException
-import org.testng.annotations.Test
+import kotlin.test.Test
 import kotlin.test.assertEquals
 
 
