@@ -1,4 +1,4 @@
-package io.github.ccjhr.samples.collection
+package io.github.ccjhr.samples.map
 
 fun hasSize() {
     // given

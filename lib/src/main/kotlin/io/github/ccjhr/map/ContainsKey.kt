@@ -5,13 +5,13 @@ import io.github.ccjhr.expectNotNull
 import kotlin.test.fail
 
 /**
- * Verifies that the [Map] under test contains a specific element.
+ * Verifies that the [Map] under test contains a specific key.
  * @since 2.0.0
- * @param key The element the [Map] under test is supposed to contain.
+ * @param key The key that the [Map] under test is supposed to contain.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable [Map] containing any nullable or non-nullable type for key and value.
  * @see notContainsKey
- * @sample io.github.ccjhr.samples.map.containskey
+ * @sample io.github.ccjhr.samples.map.containsKey
  */
 inline infix fun <reified KEY, VALUE> AssertionContext<out Map<KEY, VALUE>?>.containsKey(key: KEY) {
     expectNotNull(this.content)

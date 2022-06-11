@@ -1,4 +1,4 @@
-package io.github.ccjhr.samples.charsequence
+package io.github.ccjhr.samples.string
 
 fun matches() {
     // given

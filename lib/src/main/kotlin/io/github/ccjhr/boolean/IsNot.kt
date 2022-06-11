@@ -11,8 +11,8 @@ import kotlin.test.fail
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable or non-nullable [Boolean].
  * @see is
- * @sample io.github.ccjhr.samples.any.isNotTrue
- * @sample io.github.ccjhr.samples.any.isNotFalse
+ * @sample io.github.ccjhr.samples.boolean.isNotTrue
+ * @sample io.github.ccjhr.samples.boolean.isNotFalse
  */
 inline infix fun <reified T : Boolean?> AssertionContext<T>.isNot(value: Boolean) {
     expectNotNull(this.content)
