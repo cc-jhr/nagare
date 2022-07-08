@@ -28,7 +28,7 @@ fun contains() {
     }
 }
 
-fun notContains() {
+fun doesntContain() {
     // given
     val map = mapOf(
         1 to "Hello",
@@ -38,7 +38,7 @@ fun notContains() {
 
     // when
     map mustSatisfy {
-        it notContains (2 to "test")
+        it doesntContain (2 to "test")
     }
 }
 
@@ -56,7 +56,7 @@ fun containsKey() {
     }
 }
 
-fun notContainsKey() {
+fun doesntContainKey() {
     // given
     val map = mapOf(
         1 to "Hello",
@@ -66,6 +66,6 @@ fun notContainsKey() {
 
     // when
     map mustSatisfy {
-        it containsKey 4
+        it doesntContainKey 4
     }
 }

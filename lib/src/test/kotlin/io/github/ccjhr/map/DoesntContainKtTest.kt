@@ -5,7 +5,7 @@ import io.github.ccjhr.throwable.expectsException
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-internal class NotContainsKtTest {
+internal class DoesntContainKtTest {
 
     @Test
     fun `throws exception if the object is null`() {
@@ -15,7 +15,7 @@ internal class NotContainsKtTest {
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it notContains (1 to "hello")
+                it doesntContain (1 to "hello")
             }
         }
 
@@ -35,7 +35,7 @@ internal class NotContainsKtTest {
         // when
         val result = expectsException<AssertionError> {
             map mustSatisfy {
-                it notContains (2 to "of")
+                it doesntContain (2 to "of")
             }
         }
 
@@ -54,7 +54,7 @@ internal class NotContainsKtTest {
 
         // when
         map mustSatisfy {
-            it notContains (2 to "test")
+            it doesntContain (2 to "test")
         }
     }
 
@@ -69,7 +69,7 @@ internal class NotContainsKtTest {
 
         // when
         map mustSatisfy {
-            it notContains (4 to "of")
+            it doesntContain (4 to "of")
         }
     }
 
@@ -84,7 +84,7 @@ internal class NotContainsKtTest {
 
         // when
         map mustSatisfy {
-            it notContains (4 to "test")
+            it doesntContain (4 to "test")
         }
     }
 }

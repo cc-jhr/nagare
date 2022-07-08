@@ -10,13 +10,13 @@ fun contains() {
     }
 }
 
-fun notContains() {
+fun doesntContain() {
     // given
     val list = listOf("List", "of", "words.")
 
     // then
     list mustSatisfy {
-        it notContains "world"
+        it doesntContain "world"
     }
 }
 

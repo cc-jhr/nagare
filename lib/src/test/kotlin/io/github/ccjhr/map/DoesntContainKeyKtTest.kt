@@ -1,21 +1,21 @@
-package io.github.ccjhr.collection
+package io.github.ccjhr.map
 
 import io.github.ccjhr.mustSatisfy
 import io.github.ccjhr.throwable.expectsException
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-internal class NotContainsKtTest {
+internal class DoesntContainKeyKtTest {
 
     @Test
     fun `throws exception if the object is null`() {
         // given
-        val obj: Collection<String>? = null
+        val obj: Map<Int, String>? = null
 
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it notContains "test"
+                it doesntContainKey 1
             }
         }
 
@@ -26,27 +26,35 @@ internal class NotContainsKtTest {
     @Test
     fun fails() {
         // given
-        val list = listOf("List", "of", "words.")
+        val map = mapOf(
+            1 to "Hello",
+            2 to "of",
+            3 to "words.",
+        )
 
         // when
         val result = expectsException<AssertionError> {
-            list mustSatisfy {
-                it notContains "of"
+            map mustSatisfy {
+                it doesntContainKey 2
             }
         }
 
         // then
-        assertEquals("Expecting <[List, of, words.]> to not contain <of>, but it does.", result.message)
+        assertEquals("Expecting Map to not contain key <2>, but it does.", result.message)
     }
 
     @Test
     fun succeeds() {
         // given
-        val list = listOf("List", "of", "words.")
+        val map = mapOf(
+            1 to "Hello",
+            2 to "of",
+            3 to "words.",
+        )
 
         // when
-        list mustSatisfy {
-            it notContains "world"
+        map mustSatisfy {
+            it doesntContainKey 4
         }
     }
 }
