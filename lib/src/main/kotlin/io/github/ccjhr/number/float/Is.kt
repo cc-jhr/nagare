@@ -12,7 +12,7 @@ import kotlin.test.fail
  * @since 2.0.0
  * @param adjective The [NumberAssertionAdjectives] that applies to the object under test.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [Float].
+ * @receiver Any nullable or non-nullable [Float].
  * @see isNot
  * @sample io.github.ccjhr.samples.number.float.isOdd
  * @sample io.github.ccjhr.samples.number.float.isEven

@@ -10,7 +10,7 @@ import kotlin.test.fail
  * @since 2.0.0
  * @param boundaries Contains the lower and upper boundary.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [UInt].
+ * @receiver Any nullable or non-nullable [UInt].
  * @sample io.github.ccjhr.samples.number.uint.isBetween
  */
 inline infix fun <reified T : UInt?> AssertionContext<T>.isBetween(boundaries: ClosedRange<UInt>) {

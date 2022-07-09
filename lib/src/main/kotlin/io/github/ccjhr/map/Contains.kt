@@ -9,8 +9,8 @@ import kotlin.test.fail
  * @since 2.0.0
  * @param entry The element the [Map] under test is supposed to contain.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [Map] containing any nullable or non-nullable type for key and value.
- * @see notContains
+ * @receiver Any nullable or non-nullable [Map] containing any nullable or non-nullable type for key and value.
+ * @see doesntContain
  * @sample io.github.ccjhr.samples.map.contains
  */
 inline infix fun <reified KEY, VALUE> AssertionContext<out Map<KEY, VALUE>?>.contains(entry: Pair<KEY, VALUE>) {

@@ -9,7 +9,7 @@ import kotlin.test.fail
  * @since 2.0.0
  * @param obj The value which is supposed the be less than the [UInt] under test.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [UInt].
+ * @receiver Any nullable or non-nullable [UInt].
  * @see isLessThan
  * @sample io.github.ccjhr.samples.number.uint.isGreaterThan
  */

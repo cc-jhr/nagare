@@ -10,7 +10,7 @@ import kotlin.test.fail
  * @since 2.0.0
  * @param expectedElements A [Collection] containing items which are expected to exist in the [Collection] under test.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [Collection] containing any nullable or non-nullable type.
+ * @receiver Any nullable or non-nullable [Collection] containing any nullable or non-nullable type.
  * @see containsNoneOf
  * @sample io.github.ccjhr.samples.collection.containsAllOf
  */

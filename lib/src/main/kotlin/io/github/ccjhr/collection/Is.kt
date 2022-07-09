@@ -11,7 +11,7 @@ import kotlin.test.fail
  * @since 2.0.0
  * @param adjective The [CollectionAssertionAdjective] that applies to the [Collection] under test.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [Collection] containing any nullable or non-nullable type.
+ * @receiver Any nullable or non-nullable [Collection] containing any nullable or non-nullable type.
  * @see isNot
  * @sample io.github.ccjhr.samples.collection.isEmpty
  */

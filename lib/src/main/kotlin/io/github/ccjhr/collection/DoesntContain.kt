@@ -9,7 +9,7 @@ import kotlin.test.fail
  * @since 2.1.0
  * @param obj The element the [Collection] under test is not supposed to contain.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [Collection] containing any nullable or non-nullable type.
+ * @receiver Any nullable or non-nullable [Collection] containing any nullable or non-nullable type.
  * @see contains
  * @sample io.github.ccjhr.samples.collection.doesntContain
  */

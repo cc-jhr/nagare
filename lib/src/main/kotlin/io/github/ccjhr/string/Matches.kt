@@ -9,7 +9,7 @@ import kotlin.test.fail
  * @since 2.0.0
  * @param regex The [Regex] that the [String] under test is supposed to match.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [String].
+ * @receiver Any nullable or non-nullable [String].
  * @sample io.github.ccjhr.samples.string.matches
  * @see notMatches
  */

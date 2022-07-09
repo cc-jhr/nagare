@@ -6,7 +6,7 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 
 
-internal class NotMatchesKtTest {
+internal class DoesntMatchKtTest {
 
     @Test
     fun `throws exception if the object is null`() {
@@ -16,7 +16,7 @@ internal class NotMatchesKtTest {
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it notMatches Regex("[a-z]+-string-\\d+")
+                it doesntMatch Regex("[a-z]+-string-\\d+")
             }
         }
 
@@ -32,7 +32,7 @@ internal class NotMatchesKtTest {
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it notMatches Regex("[a-z]+-string-\\d+")
+                it doesntMatch Regex("[a-z]+-string-\\d+")
             }
         }
 
@@ -47,7 +47,7 @@ internal class NotMatchesKtTest {
 
         // when
         obj mustSatisfy {
-            it notMatches Regex("[a-z]+-string-\\d+")
+            it doesntMatch Regex("[a-z]+-string-\\d+")
         }
     }
 }

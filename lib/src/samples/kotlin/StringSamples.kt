@@ -10,13 +10,13 @@ fun matches() {
     }
 }
 
-fun notMatches() {
+fun doesntMatch() {
     // given
     val obj = "test"
 
     // when
     obj mustSatisfy {
-        it notMatches Regex("[a-z]+-string-\\d+")
+        it doesntMatch Regex("[a-z]+-string-\\d+")
     }
 }
 

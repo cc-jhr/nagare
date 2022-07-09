@@ -13,7 +13,7 @@ import kotlin.test.fail
  * @since 2.0.0
  * @param adjective The [UnsignedNumberAssertionAdjectives] that applies to the object under test.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [UShort].
+ * @receiver Any nullable or non-nullable [UShort].
  * @see isNot
  * @sample io.github.ccjhr.samples.number.ushort.isOdd
  * @sample io.github.ccjhr.samples.number.ushort.isEven

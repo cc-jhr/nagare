@@ -9,7 +9,7 @@ import kotlin.test.fail
  * @since 1.0.0
  * @param expectedLength The length the [CharSequence] under test is supposed to have.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [CharSequence].
+ * @receiver Any nullable or non-nullable [CharSequence].
  * @sample io.github.ccjhr.samples.charsequence.hasLength
  */
 inline infix fun <reified T : CharSequence?> AssertionContext<T>.hasLength(expectedLength: Int) {

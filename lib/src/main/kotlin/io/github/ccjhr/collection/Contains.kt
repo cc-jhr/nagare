@@ -9,8 +9,8 @@ import kotlin.test.fail
  * @since 1.0.0
  * @param obj The element the [Collection] under test is supposed to contain.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [Collection] containing any nullable or non-nullable type.
- * @see notContains
+ * @receiver Any nullable or non-nullable [Collection] containing any nullable or non-nullable type.
+ * @see doesntContain
  * @sample io.github.ccjhr.samples.collection.contains
  */
 inline infix fun <reified T> AssertionContext<out Collection<T>?>.contains(obj: T) {

@@ -9,7 +9,7 @@ import kotlin.test.fail
  * @since 2.0.0
  * @param expectedSize Expected size of the [Map] under test.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [Map] containing any nullable or non-nullable type for key and value.
+ * @receiver Any nullable or non-nullable [Map] containing any nullable or non-nullable type for key and value.
  * @sample io.github.ccjhr.samples.map.hasSize
  */
 inline infix fun <reified KEY, VALUE> AssertionContext<out Map<KEY, VALUE>?>.hasSize(expectedSize: Int) {

@@ -9,7 +9,7 @@ import kotlin.test.fail
  * @since 2.0.0
  * @param obj The value which is supposed the be greater than the [Float] under test.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [Float].
+ * @receiver Any nullable or non-nullable [Float].
  * @see isGreaterThan
  * @sample io.github.ccjhr.samples.number.float.isLessThan
  */

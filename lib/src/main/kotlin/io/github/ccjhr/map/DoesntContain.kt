@@ -10,7 +10,7 @@ import kotlin.test.fail
  * @since 2.1.0
  * @param entry The element the [Map] under test is not supposed to contain.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [Map] containing any nullable or non-nullable type for key and value.
+ * @receiver Any nullable or non-nullable [Map] containing any nullable or non-nullable type for key and value.
  * @see contains
  * @sample io.github.ccjhr.samples.map.doesntContain
  */

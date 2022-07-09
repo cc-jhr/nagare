@@ -9,7 +9,7 @@ import kotlin.test.fail
  * @since 2.0.0
  * @param obj The value which is supposed the be less than the [UShort] under test.
  * @throws AssertionError In case the assertion fails.
- * @receiver Any nullable [UShort].
+ * @receiver Any nullable or non-nullable [UShort].
  * @see isLessThan
  * @sample io.github.ccjhr.samples.number.ushort.isGreaterThan
  */
