@@ -19,3 +19,23 @@ fun notMatches() {
         it notMatches Regex("[a-z]+-string-\\d+")
     }
 }
+
+fun contains() {
+    // given
+    val obj = "this is a test"
+
+    // when
+    obj mustSatisfy {
+        it contains "is a"
+    }
+}
+
+fun doesntContain() {
+    // given
+    val obj = "this is a test"
+
+    // when
+    obj mustSatisfy {
+        it doesntcontain "hello"
+    }
+}

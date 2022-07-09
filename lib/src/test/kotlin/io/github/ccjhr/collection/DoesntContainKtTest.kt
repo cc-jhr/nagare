@@ -36,7 +36,7 @@ internal class DoesntContainKtTest {
         }
 
         // then
-        assertEquals("Expecting <[List, of, words.]> to not contain <of>, but it does.", result.message)
+        assertEquals("Expecting <[List, of, words.]> not to contain <of>, but it does.", result.message)
     }
 
     @Test

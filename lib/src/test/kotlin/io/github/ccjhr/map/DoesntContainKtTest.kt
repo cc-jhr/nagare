@@ -40,7 +40,7 @@ internal class DoesntContainKtTest {
         }
 
         // then
-        assertEquals("Expecting Map to not contain <(2, of)>, but it does.", result.message)
+        assertEquals("Expecting Map not to contain <(2, of)>, but it does.", result.message)
     }
 
     @Test

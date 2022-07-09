@@ -17,7 +17,7 @@ inline infix fun <reified KEY, VALUE> AssertionContext<out Map<KEY, VALUE>?>.not
 
 /**
  * Verifies that the [Map] under test doesn't contain a specific element.
- * @since 3.0.0
+ * @since 2.1.0
  * @param entry The element the [Map] under test is not supposed to contain.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable [Map] containing any nullable or non-nullable type for key and value.
@@ -28,6 +28,6 @@ inline infix fun <reified KEY, VALUE> AssertionContext<out Map<KEY, VALUE>?>.doe
     expectNotNull(this.content)
 
     if (this.content[entry.first] == entry.second) {
-        fail("Expecting Map to not contain <$entry>, but it does.")
+        fail("Expecting Map not to contain <$entry>, but it does.")
     }
 }
