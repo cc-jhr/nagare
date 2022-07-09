@@ -36,6 +36,6 @@ fun doesntContain() {
 
     // when
     obj mustSatisfy {
-        it doesntcontain "hello"
+        it doesntContain "hello"
     }
 }
