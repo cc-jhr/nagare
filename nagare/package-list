@@ -31,7 +31,6 @@ $dokka.location:io.github.ccjhr.collection//doesntContain/io.github.ccjhr.Assert
 $dokka.location:io.github.ccjhr.collection//hasSize/io.github.ccjhr.AssertionContext[kotlin.collections.Collection[TypeParam(bounds=[kotlin.Any?])]?]#kotlin.Int/PointingToDeclaration/nagare/io.github.ccjhr.collection/has-size.html
 $dokka.location:io.github.ccjhr.collection//is/io.github.ccjhr.AssertionContext[kotlin.collections.Collection[TypeParam(bounds=[kotlin.Any?])]?]#io.github.ccjhr.collection.CollectionAssertionAdjective/PointingToDeclaration/nagare/io.github.ccjhr.collection/is.html
 $dokka.location:io.github.ccjhr.collection//isNot/io.github.ccjhr.AssertionContext[kotlin.collections.Collection[TypeParam(bounds=[kotlin.Any?])]?]#io.github.ccjhr.collection.CollectionAssertionAdjective/PointingToDeclaration/nagare/io.github.ccjhr.collection/is-not.html
-$dokka.location:io.github.ccjhr.collection//notContains/io.github.ccjhr.AssertionContext[kotlin.collections.Collection[TypeParam(bounds=[kotlin.Any?])]?]#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/nagare/io.github.ccjhr.collection/not-contains.html
 $dokka.location:io.github.ccjhr.collection/CollectionAssertionAdjective.Empty///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}nagare/io.github.ccjhr.collection/-collection-assertion-adjective/-empty/index.html
 $dokka.location:io.github.ccjhr.collection/CollectionAssertionAdjective///PointingToDeclaration/nagare/io.github.ccjhr.collection/-collection-assertion-adjective/index.html
 $dokka.location:io.github.ccjhr.collection/ContainsExactlyAssertionAdjective.InTheSameOrder///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}nagare/io.github.ccjhr.collection/-contains-exactly-assertion-adjective/-in-the-same-order/index.html
@@ -46,8 +45,6 @@ $dokka.location:io.github.ccjhr.map//containsKey/io.github.ccjhr.AssertionContex
 $dokka.location:io.github.ccjhr.map//doesntContain/io.github.ccjhr.AssertionContext[kotlin.collections.Map[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]?]#kotlin.Pair[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/nagare/io.github.ccjhr.map/doesnt-contain.html
 $dokka.location:io.github.ccjhr.map//doesntContainKey/io.github.ccjhr.AssertionContext[kotlin.collections.Map[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]?]#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/nagare/io.github.ccjhr.map/doesnt-contain-key.html
 $dokka.location:io.github.ccjhr.map//hasSize/io.github.ccjhr.AssertionContext[kotlin.collections.Map[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]?]#kotlin.Int/PointingToDeclaration/nagare/io.github.ccjhr.map/has-size.html
-$dokka.location:io.github.ccjhr.map//notContains/io.github.ccjhr.AssertionContext[kotlin.collections.Map[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]?]#kotlin.Pair[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/nagare/io.github.ccjhr.map/not-contains.html
-$dokka.location:io.github.ccjhr.map//notContainsKey/io.github.ccjhr.AssertionContext[kotlin.collections.Map[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]?]#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/nagare/io.github.ccjhr.map/not-contains-key.html
 $dokka.location:io.github.ccjhr.number.double////PointingToDeclaration/nagare/io.github.ccjhr.number.double/index.html
 $dokka.location:io.github.ccjhr.number.double//is/io.github.ccjhr.AssertionContext[TypeParam(bounds=[kotlin.Double?])]#io.github.ccjhr.number.NumberAssertionAdjectives/PointingToDeclaration/nagare/io.github.ccjhr.number.double/is.html
 $dokka.location:io.github.ccjhr.number.double//isBetween/io.github.ccjhr.AssertionContext[TypeParam(bounds=[kotlin.Double?])]#kotlin.ranges.ClosedFloatingPointRange[kotlin.Double]/PointingToDeclaration/nagare/io.github.ccjhr.number.double/is-between.html
@@ -106,21 +103,34 @@ $dokka.location:io.github.ccjhr.number/UnsignedNumberAssertionAdjectives.Even///
 $dokka.location:io.github.ccjhr.number/UnsignedNumberAssertionAdjectives.Odd///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}nagare/io.github.ccjhr.number/-unsigned-number-assertion-adjectives/-odd/index.html
 $dokka.location:io.github.ccjhr.number/UnsignedNumberAssertionAdjectives///PointingToDeclaration/nagare/io.github.ccjhr.number/-unsigned-number-assertion-adjectives/index.html
 $dokka.location:io.github.ccjhr.string////PointingToDeclaration/nagare/io.github.ccjhr.string/index.html
+$dokka.location:io.github.ccjhr.string//contains/io.github.ccjhr.AssertionContext[TypeParam(bounds=[kotlin.String?])]#kotlin.String/PointingToDeclaration/nagare/io.github.ccjhr.string/contains.html
+$dokka.location:io.github.ccjhr.string//doesntContain/io.github.ccjhr.AssertionContext[TypeParam(bounds=[kotlin.String?])]#kotlin.String/PointingToDeclaration/nagare/io.github.ccjhr.string/doesnt-contain.html
+$dokka.location:io.github.ccjhr.string//doesntMatch/io.github.ccjhr.AssertionContext[TypeParam(bounds=[kotlin.String?])]#kotlin.text.Regex/PointingToDeclaration/nagare/io.github.ccjhr.string/doesnt-match.html
 $dokka.location:io.github.ccjhr.string//matches/io.github.ccjhr.AssertionContext[TypeParam(bounds=[kotlin.String?])]#kotlin.text.Regex/PointingToDeclaration/nagare/io.github.ccjhr.string/matches.html
-$dokka.location:io.github.ccjhr.string//notMatches/io.github.ccjhr.AssertionContext[TypeParam(bounds=[kotlin.String?])]#kotlin.text.Regex/PointingToDeclaration/nagare/io.github.ccjhr.string/not-matches.html
 $dokka.location:io.github.ccjhr.throwable////PointingToDeclaration/nagare/io.github.ccjhr.throwable/index.html
 $dokka.location:io.github.ccjhr.throwable//expectsException/#kotlin.Function0[kotlin.Any]/PointingToDeclaration/nagare/io.github.ccjhr.throwable/expects-exception.html
 $dokka.location:io.github.ccjhr.throwable//hasMessage/io.github.ccjhr.AssertionContext[TypeParam(bounds=[kotlin.Throwable?])]#kotlin.String/PointingToDeclaration/nagare/io.github.ccjhr.throwable/has-message.html
 $dokka.location:io.github.ccjhr.throwable//noExceptionThrown/#kotlin.Function0[kotlin.Any]/PointingToDeclaration/nagare/io.github.ccjhr.throwable/no-exception-thrown.html
 $dokka.location:io.github.ccjhr////PointingToDeclaration/nagare/io.github.ccjhr/index.html
 $dokka.location:io.github.ccjhr//expectNotNull/#TypeParam(bounds=[kotlin.Any])?/PointingToDeclaration/nagare/io.github.ccjhr/expect-not-null.html
+$dokka.location:io.github.ccjhr//given/#kotlin.Function0[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/nagare/io.github.ccjhr/given.html
 $dokka.location:io.github.ccjhr//instanceString/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/nagare/io.github.ccjhr/instance-string.html
+$dokka.location:io.github.ccjhr//main/#/PointingToDeclaration/nagare/io.github.ccjhr/main.html
 $dokka.location:io.github.ccjhr//mustSatisfy/TypeParam(bounds=[kotlin.Any?])#kotlin.Function1[io.github.ccjhr.AssertionContext[TypeParam(bounds=[kotlin.Any?])],kotlin.Unit]/PointingToDeclaration/nagare/io.github.ccjhr/must-satisfy.html
+$dokka.location:io.github.ccjhr//then/io.github.ccjhr.AssertionContext[TypeParam(bounds=[kotlin.Any?])]#kotlin.Function1[io.github.ccjhr.AssertionContext[TypeParam(bounds=[kotlin.Any?])],kotlin.Unit]/PointingToDeclaration/nagare/io.github.ccjhr/then.html
+$dokka.location:io.github.ccjhr//when/#kotlin.Function0[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/nagare/io.github.ccjhr/when.html
+$dokka.location:io.github.ccjhr//when/io.github.ccjhr.GivenContext[TypeParam(bounds=[kotlin.Any])]#kotlin.Function1[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/nagare/io.github.ccjhr/when.html
 $dokka.location:io.github.ccjhr/AssertionContext///PointingToDeclaration/nagare/io.github.ccjhr/-assertion-context/index.html
 $dokka.location:io.github.ccjhr/AssertionContext/AssertionContext/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/nagare/io.github.ccjhr/-assertion-context/-assertion-context.html
 $dokka.location:io.github.ccjhr/AssertionContext/content/#/PointingToDeclaration/nagare/io.github.ccjhr/-assertion-context/content.html
 $dokka.location:io.github.ccjhr/Experimental///PointingToDeclaration/nagare/io.github.ccjhr/-experimental/index.html
 $dokka.location:io.github.ccjhr/Experimental/Experimental/#/PointingToDeclaration/nagare/io.github.ccjhr/-experimental/-experimental.html
+$dokka.location:io.github.ccjhr/GivenContext///PointingToDeclaration/nagare/io.github.ccjhr/-given-context/index.html
+$dokka.location:io.github.ccjhr/GivenContext/GivenContext/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/nagare/io.github.ccjhr/-given-context/-given-context.html
+$dokka.location:io.github.ccjhr/GivenContext/content/#/PointingToDeclaration/nagare/io.github.ccjhr/-given-context/content.html
+$dokka.location:io.github.ccjhr/Tester///PointingToDeclaration/nagare/io.github.ccjhr/-tester/index.html
+$dokka.location:io.github.ccjhr/Tester/Tester/#/PointingToDeclaration/nagare/io.github.ccjhr/-tester/-tester.html
+$dokka.location:io.github.ccjhr/Tester/doSomething/#/PointingToDeclaration/nagare/io.github.ccjhr/-tester/do-something.html
 io.github.ccjhr
 io.github.ccjhr.any
 io.github.ccjhr.boolean
