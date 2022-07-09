@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>nagare </title>
+    <title>nagare</title>
     <link href="images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "";</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
@@ -27,11 +27,11 @@ if(savedDarkMode === true){
     <div id="leftToggler"><span class="icon-toggler"></span></div>
     <div class="library-name">
             <a href="index.html">
-                    <span>nagare </span>
+                    <span>nagare</span>
             </a>
     </div>
     <div>
-    </div>
+2.1.0    </div>
     <div class="pull-right d-flex">
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
@@ -42,10 +42,11 @@ if(savedDarkMode === true){
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-<div class="main-content" id="content" pageIds="nagare ::////PointingToDeclaration//1440829338">
+<div class="main-content" id="content" pageIds="nagare::////PointingToDeclaration//1440829338">
   <div class="breadcrumbs"></div>
   <div class="cover ">
-    <h1 class="cover"><span><span>nagare</span></span> </h1>
+    <h1 class="cover"><span><span>nagare</span></span></h1>
+    <div class="platform-hinted UnderCoverText" data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><p class="paragraph">Nagare (流れ) is japanese and means &quot;flow&quot; / &quot;stream&quot;. This is an assertion/matcher library for kotlin using infix functions. It is easily extendable using extension functions. You can use it with both junit or testng.</p><h2 class=""> Setup</h2><p class="paragraph">In order to use this library you need a github account and a repository read token. When logged-in open the <a href="https://github.com/settings/tokens">personal access tokens page</a>. Create a new token having <code class="lang-kotlin">read:packages</code> as the only permission.</p><h3 class=""> Gradle - kotlin-dsl</h3><p class="paragraph">Add the repository to your existing list of repositories:</p><div class="sample-container"><pre><code class="block lang-gradle" theme="idea">repositories {<br>    maven {<br>        name = &quot;nagare&quot;<br>        url = uri(&quot;https://maven.pkg.github.com/cc-jhr/nagare&quot;)<br>        credentials {<br>            username = &quot;your-github-username-here&quot;            // you should probably use environment variables<br>            password = &quot;your-github-packages-read-token-here&quot; // or gradle properties here to inject the values<br>        }<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Add the dependency to your <code class="lang-kotlin">dependencies</code> block:</p><div class="sample-container"><pre><code class="block lang-gradle" theme="idea">dependencies {<br>    testImplementation(&quot;io.github.ccjhr:nagare:VERSION&quot;)<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Usage</h2><p class="paragraph">Origin of a test is the object itsef. The object must satisfy criteria</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">    @Test<br>    fun `usage test`() {<br>        12 mustSatisfy {<br><br>        }<br>    }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Various criteria can be described depending on the class type. <code class="lang-kotlin">Int</code> for example provides functions like <code class="lang-kotlin">isGreaterThan</code>/<code class="lang-kotlin">isLesserThan</code>.</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">    @Test<br>    fun `usage test`() {<br>        12 mustSatisfy {<br>            it isGreaterThan 6<br>            it isBetween 10..20<br>        }<br>    }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Nullability can be checked using additional adjectives:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">    @Test<br>    fun `usage test`() {<br>        val obj: String? = null<br><br>        obj mustSatisfy {<br>            it isNot Null<br>        }<br>    }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Checking a parameter of a more complex object can be achieved using a nested <code class="lang-kotlin">mustSatisfy</code> block:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">    @Test<br>    fun `usage test`() {<br>        val obj = MyObj(12, &quot;&quot;, emptyList())<br><br>        obj mustSatisfy {<br>            it isNot Null<br>            it isOfType MyObj::class<br><br>            it.content.number mustSatisfy { number -&gt;<br>                number isEqualTo 12<br>            }<br>        }<br>    }<br><br>    data class MyObj(<br>        val number: Int,<br>    )</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Individual extensions</h2><p class="paragraph">Lets assume we have an individual object.</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">data class MyObj(<br>    val title: String = &quot;&quot;,<br>    val number: Int = 0,<br>)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h3 class=""> Based on values</h3><p class="paragraph">The extension function itself always has a similar structure. In the signature we place our object type as well as the class type that we want to test against and give the function a name. Check for nullability. It's possible to make this non-nullable, but then you would have to use <code class="lang-kotlin">!!</code> operator or a kotlin function which uses contracts like <code class="lang-kotlin">requireNotNull</code> if your resulting object is nullable.</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">inline infix fun &lt;reified T : MyObj?&gt; AssertionContext&lt;T&gt;.hasTitleMatching(regex: Regex) {<br>    expectNotNull(this.content)<br><br>    if (!regex.matches(this.content.title)) {<br>        fail(&quot;Expecting title &lt;${this.content.title}&gt; to match &lt;${regex.pattern}&gt;, but it doesn't.&quot;)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Then we can use it in a test.</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">@Test<br>fun `test the newly created extension`() {<br>    // given<br>    // setting up the test case<br><br>    // when<br>    val result: MyObj = // code that returns an instance of MyObj<br><br>    // then<br>    result mustSatisfy {<br>        it hasTitleMatching Regex(&quot;[a-z]+-[0-9]+&quot;)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h3 class=""> Based on adjectives</h3><p class="paragraph">We can create extensions using adjectives by adding an <code class="lang-kotlin">enum class</code> for the adjectives. Here we simply imply that the object is &quot;valid&quot; in a way.</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">enum class MyObjAssertionAdjective {<br>    Valid<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">The only difference is that the extension function takes the enum class as parameter and we use a <code class="lang-kotlin">when</code> to apply to the different cases.</p><p class="paragraph">Just for the demonstration we assume that the object is valid if it has a <code class="lang-kotlin">number</code> greater than <code class="lang-kotlin">0</code> and a <code class="lang-kotlin">title</code> which is not blank.</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">inline infix fun &lt;reified T : MyObj?&gt; AssertionContext&lt;T&gt;.hasToBe(adjective: MyObjAssertionAdjective) {<br>    expectNotNull(this.content)<br><br>    when(adjective) {<br>        Valid -&gt; if (content.number &lt;= 0 || content.title.isBlank()) fail(&quot;Object is not valid.&quot;)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Then we can use it in a test.</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">@Test<br>fun `test the newly created extension`() {<br>    // given<br>    // setting up the test case<br><br>    // when<br>    val result: MyObj = // code that returns an instance of MyObj<br><br>    // then<br>    result mustSatisfy {<br>        it hasToBe Valid<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
   </div>
   <h2 class="">Packages</h2>
   <div class="table"><a data-name="723207731%2FPackages%2F1440829338" anchor-label="io.github.ccjhr" id="723207731%2FPackages%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
@@ -53,7 +54,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr/index.html">io.github.ccjhr</a></div>
+              <div><a href="nagare/io.github.ccjhr/index.html">io.github.ccjhr</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="723207731%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -67,7 +68,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.any/index.html">io.github.ccjhr.any</a></div>
+              <div><a href="nagare/io.github.ccjhr.any/index.html">io.github.ccjhr.any</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-673138895%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -81,7 +82,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.boolean/index.html">io.github.ccjhr.boolean</a></div>
+              <div><a href="nagare/io.github.ccjhr.boolean/index.html">io.github.ccjhr.boolean</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="626109677%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -95,7 +96,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.charsequence/index.html">io.github.ccjhr.charsequence</a></div>
+              <div><a href="nagare/io.github.ccjhr.charsequence/index.html">io.github.ccjhr.charsequence</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-430843082%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -109,7 +110,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.collection/index.html">io.github.ccjhr.collection</a></div>
+              <div><a href="nagare/io.github.ccjhr.collection/index.html">io.github.ccjhr.collection</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="29730109%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -123,7 +124,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.map/index.html">io.github.ccjhr.map</a></div>
+              <div><a href="nagare/io.github.ccjhr.map/index.html">io.github.ccjhr.map</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1993836895%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -137,7 +138,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.number/index.html">io.github.ccjhr.number</a></div>
+              <div><a href="nagare/io.github.ccjhr.number/index.html">io.github.ccjhr.number</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-77125464%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -151,7 +152,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.number.double/index.html">io.github.ccjhr.number.double</a></div>
+              <div><a href="nagare/io.github.ccjhr.number.double/index.html">io.github.ccjhr.number.double</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1995050779%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -165,7 +166,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.number.float/index.html">io.github.ccjhr.number.float</a></div>
+              <div><a href="nagare/io.github.ccjhr.number.float/index.html">io.github.ccjhr.number.float</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-269951594%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -179,7 +180,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.number.int/index.html">io.github.ccjhr.number.int</a></div>
+              <div><a href="nagare/io.github.ccjhr.number.int/index.html">io.github.ccjhr.number.int</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="767960937%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -193,7 +194,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.number.long/index.html">io.github.ccjhr.number.long</a></div>
+              <div><a href="nagare/io.github.ccjhr.number.long/index.html">io.github.ccjhr.number.long</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="412767238%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -207,7 +208,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.number.short/index.html">io.github.ccjhr.number.short</a></div>
+              <div><a href="nagare/io.github.ccjhr.number.short/index.html">io.github.ccjhr.number.short</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-85338186%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -221,7 +222,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.number.uint/index.html">io.github.ccjhr.number.uint</a></div>
+              <div><a href="nagare/io.github.ccjhr.number.uint/index.html">io.github.ccjhr.number.uint</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="267049828%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -235,7 +236,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.number.ulong/index.html">io.github.ccjhr.number.ulong</a></div>
+              <div><a href="nagare/io.github.ccjhr.number.ulong/index.html">io.github.ccjhr.number.ulong</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2064392043%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -249,7 +250,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.number.ushort/index.html">io.github.ccjhr.number.ushort</a></div>
+              <div><a href="nagare/io.github.ccjhr.number.ushort/index.html">io.github.ccjhr.number.ushort</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-424576783%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -263,7 +264,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.string/index.html">io.github.ccjhr.string</a></div>
+              <div><a href="nagare/io.github.ccjhr.string/index.html">io.github.ccjhr.string</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1260666000%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -277,7 +278,7 @@ if(savedDarkMode === true){
       <div>
         <div class="main-subrow ">
           <div class=""><span class="inline-flex">
-              <div><a href="nagare /io.github.ccjhr.throwable/index.html">io.github.ccjhr.throwable</a></div>
+              <div><a href="nagare/io.github.ccjhr.throwable/index.html">io.github.ccjhr.throwable</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1755184965%2FPackages%2F1440829338"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
@@ -288,10 +289,11 @@ if(savedDarkMode === true){
     </div>
   </div>
 </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
                 class="pull-right"><span>Generated by </span><a
                 href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-        </div>
+      </div>
     </div>
 </div>
 </body>
