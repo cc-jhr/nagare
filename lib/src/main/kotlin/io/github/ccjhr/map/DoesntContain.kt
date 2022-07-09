@@ -5,16 +5,6 @@ import io.github.ccjhr.expectNotNull
 import kotlin.DeprecationLevel.WARNING
 import kotlin.test.fail
 
-@Deprecated(
-    message = "Will be removed in future versions.",
-    replaceWith = ReplaceWith(
-        expression = "doesntContain",
-        imports = ["io.github.ccjhr.map.doesntContain"],
-    ),
-    level = WARNING,
-)
-inline infix fun <reified KEY, VALUE> AssertionContext<out Map<KEY, VALUE>?>.notContains(entry: Pair<KEY, VALUE>) = doesntContain(entry)
-
 /**
  * Verifies that the [Map] under test doesn't contain a specific element.
  * @since 2.1.0

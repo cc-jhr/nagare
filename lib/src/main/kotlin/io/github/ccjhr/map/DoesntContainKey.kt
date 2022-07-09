@@ -2,18 +2,7 @@ package io.github.ccjhr.map
 
 import io.github.ccjhr.AssertionContext
 import io.github.ccjhr.expectNotNull
-import kotlin.DeprecationLevel.WARNING
 import kotlin.test.fail
-
-@Deprecated(
-    message = "Will be removed in future versions.",
-    replaceWith = ReplaceWith(
-        expression = "doesntContainKey",
-        imports = ["io.github.ccjhr.map.doesntContainKey"],
-    ),
-    level = WARNING,
-)
-inline infix fun <reified KEY, VALUE> AssertionContext<out Map<KEY, VALUE>?>.notContainsKey(key: KEY) = doesntContainKey(key)
 
 /**
  * Verifies that the [Map] under test doesn't contain a specific key.
