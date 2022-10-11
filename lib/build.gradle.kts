@@ -1,6 +1,6 @@
 plugins {
     id("org.jetbrains.kotlin.jvm") version "1.7.20"
-    id("org.jetbrains.dokka") version "1.7.10"
+    id("org.jetbrains.dokka") version "1.7.20"
     `java-library` // Apply the java-library plugin for API and implementation separation.
     `maven-publish`
     jacoco
