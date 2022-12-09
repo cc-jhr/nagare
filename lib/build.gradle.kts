@@ -25,7 +25,7 @@ dependencies {
     implementation(kotlin("test-annotations-common"))
 
     testImplementation(kotlin("test-testng"))
-    testImplementation("org.testng:testng:7.6.1")
+    testImplementation("org.testng:testng:7.7.0")
 }
 
 tasks.withType<Test> {
