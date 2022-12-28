@@ -19,7 +19,7 @@ repositories {
 
 dependencies {
     implementation(platform(kotlin("bom")))
-    implementation(kotlin("stdlib-jdk8"))
+    implementation(kotlin("stdlib"))
     implementation(kotlin("reflect"))
     implementation(kotlin("test"))
     implementation(kotlin("test-annotations-common"))
