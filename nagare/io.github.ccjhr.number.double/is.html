@@ -6,10 +6,18 @@
     <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../";</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-const savedDarkMode = storage ? JSON.parse(storage) : false
-if(savedDarkMode === true){
-    document.getElementsByTagName("html")[0].classList.add("theme-dark")
-}</script>
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
 <script src="https://unpkg.com/kotlin-playground@1"></script><script src="https://unpkg.com/kotlin-playground@1"></script><script src="https://unpkg.com/kotlin-playground@1"></script><script src="https://unpkg.com/kotlin-playground@1"></script><script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../styles/style.css" rel="Stylesheet">
 <link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
@@ -21,6 +29,7 @@ if(savedDarkMode === true){
 <script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
 <script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
 <script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
 <div class="navigation-wrapper" id="navigation-wrapper">
@@ -31,7 +40,7 @@ if(savedDarkMode === true){
             </a>
     </div>
     <div>
-3.0.0    </div>
+3.0.1    </div>
     <div class="pull-right d-flex">
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
@@ -43,11 +52,11 @@ if(savedDarkMode === true){
     </div>
     <div id="main">
 <div class="main-content" id="content" pageIds="nagare::io.github.ccjhr.number.double//is/io.github.ccjhr.AssertionContext[TypeParam(bounds=[kotlin.Double?])]#io.github.ccjhr.number.NumberAssertionAdjectives/PointingToDeclaration//1440829338">
-  <div class="breadcrumbs"><a href="../../index.html">nagare</a><span class="delimiter">/</span><a href="index.html">io.github.ccjhr.number.double</a><span class="delimiter">/</span><a href="is.html">is</a></div>
+  <div class="breadcrumbs"><a href="../../index.html">nagare</a><span class="delimiter">/</span><a href="index.html">io.github.ccjhr.number.double</a><span class="delimiter">/</span><span class="current">is</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>is</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">infix inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="is.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token operator">&gt; </span><a href="../io.github.ccjhr/-assertion-context/index.html">AssertionContext</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="is.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="is.html"><span class="token function">is</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">adjective<span class="token operator">: </span><a href="../io.github.ccjhr.number/-number-assertion-adjectives/index.html">NumberAssertionAdjectives</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Verifies that the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a> under test applies to a given <a href="../io.github.ccjhr.number/-number-assertion-adjectives/index.html">NumberAssertionAdjectives</a>.</p><h4 class="">Since</h4><p class="paragraph">2.0.0</p><h4 class="">Receiver</h4><p class="paragraph">Any nullable or non-nullable <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a>.</p><h2 class="">Samples</h2><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">infix inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="is.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token operator">&gt; </span><a href="../io.github.ccjhr/-assertion-context/index.html">AssertionContext</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="is.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="is.html"><span class="token function">is</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">adjective<span class="token operator">: </span><a href="../io.github.ccjhr.number/-number-assertion-adjectives/index.html">NumberAssertionAdjectives</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Verifies that the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a> under test applies to a given <a href="../io.github.ccjhr.number/-number-assertion-adjectives/index.html">NumberAssertionAdjectives</a>.</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2.0.0</p></span><span class="kdoc-tag"><h4 class="">Receiver</h4><p class="paragraph">Any nullable or non-nullable <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a>.</p></span><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
 fun main() { 
    //sampleStart 
    // given
@@ -91,7 +100,7 @@ obj mustSatisfy {
     it `is` Negative
 } 
    //sampleEnd
-}</code></pre></div><h2 class="">See also</h2><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="is-not.html"><span>is</span><wbr></wbr><span><span>Not</span></span></a></div></span></div><div><div class="title"><div data-togglable="See also"></div></div></div></div></div></div></div><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>adjective</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The <a href="../io.github.ccjhr.number/-number-assertion-adjectives/index.html">NumberAssertionAdjectives</a> that applies to the object under test.</p></div></div></div></div></div></div></div><h2 class="">Throws</h2><div class="table"><div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-assertion-error/index.html"><span>kotlin.</span><wbr></wbr><span>Assertion</span><wbr></wbr><span><span>Error</span></span></a></div></span></div><div><div class="title"><p class="paragraph">In case the assertion fails.</p></div></div></div></div></div></div></div>
+}</code></pre></div><h4 class="">See also</h4><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="is-not.html"><span>is</span><wbr></wbr><span><span>Not</span></span></a></div></span></div><div></div></div></div></div></div><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>adjective</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The <a href="../io.github.ccjhr.number/-number-assertion-adjectives/index.html">NumberAssertionAdjectives</a> that applies to the object under test.</p></div></div></div></div></div></div></div><h4 class="">Throws</h4><div class="table" data-togglable="Throws"><div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-assertion-error/index.html"><span>Assertion</span><wbr></wbr><span><span>Error</span></span></a></div></span></div><div><div class="title"><p class="paragraph">In case the assertion fails.</p></div></div></div></div></div></div></div>
 </div>
       <div class="footer">
         <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
