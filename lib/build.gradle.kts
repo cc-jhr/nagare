@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.8.21"
+    kotlin("jvm") version "1.8.22"
     id("org.jetbrains.dokka") version "1.8.20"
     `java-library` // Apply the java-library plugin for API and implementation separation.
     `maven-publish`
