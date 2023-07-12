@@ -27,7 +27,7 @@ jobs:
       - name: Generate API documentation
         run: ./gradlew dokkaHtml -Prelease.version=$RELEASE_VERSION
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.4.2
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           branch: gh-pages
           folder: lib/build/dokka
