@@ -11,6 +11,7 @@ $dokka.location:io.github.ccjhr.any//isOfType/io.github.ccjhr.AssertionContext[T
 $dokka.location:io.github.ccjhr.any//isSameAs/io.github.ccjhr.AssertionContext[TypeParam(bounds=[kotlin.Any?])]#kotlin.Any/PointingToDeclaration/nagare/io.github.ccjhr.any/is-same-as.html
 $dokka.location:io.github.ccjhr.any/AnyAssertionAdjective.Null///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}nagare/io.github.ccjhr.any/-any-assertion-adjective/-null/index.html
 $dokka.location:io.github.ccjhr.any/AnyAssertionAdjective///PointingToDeclaration/nagare/io.github.ccjhr.any/-any-assertion-adjective/index.html
+$dokka.location:io.github.ccjhr.any/AnyAssertionAdjective/entries/#/PointingToDeclaration/nagare/io.github.ccjhr.any/-any-assertion-adjective/entries.html
 $dokka.location:io.github.ccjhr.any/AnyAssertionAdjective/valueOf/#kotlin.String/PointingToDeclaration/nagare/io.github.ccjhr.any/-any-assertion-adjective/value-of.html
 $dokka.location:io.github.ccjhr.any/AnyAssertionAdjective/values/#/PointingToDeclaration/nagare/io.github.ccjhr.any/-any-assertion-adjective/values.html
 $dokka.location:io.github.ccjhr.boolean////PointingToDeclaration/nagare/io.github.ccjhr.boolean/index.html
@@ -23,6 +24,7 @@ $dokka.location:io.github.ccjhr.charsequence//isNot/io.github.ccjhr.AssertionCon
 $dokka.location:io.github.ccjhr.charsequence/CharSequenceAssertionAdjective.Blank///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}nagare/io.github.ccjhr.charsequence/-char-sequence-assertion-adjective/-blank/index.html
 $dokka.location:io.github.ccjhr.charsequence/CharSequenceAssertionAdjective.Empty///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}nagare/io.github.ccjhr.charsequence/-char-sequence-assertion-adjective/-empty/index.html
 $dokka.location:io.github.ccjhr.charsequence/CharSequenceAssertionAdjective///PointingToDeclaration/nagare/io.github.ccjhr.charsequence/-char-sequence-assertion-adjective/index.html
+$dokka.location:io.github.ccjhr.charsequence/CharSequenceAssertionAdjective/entries/#/PointingToDeclaration/nagare/io.github.ccjhr.charsequence/-char-sequence-assertion-adjective/entries.html
 $dokka.location:io.github.ccjhr.charsequence/CharSequenceAssertionAdjective/valueOf/#kotlin.String/PointingToDeclaration/nagare/io.github.ccjhr.charsequence/-char-sequence-assertion-adjective/value-of.html
 $dokka.location:io.github.ccjhr.charsequence/CharSequenceAssertionAdjective/values/#/PointingToDeclaration/nagare/io.github.ccjhr.charsequence/-char-sequence-assertion-adjective/values.html
 $dokka.location:io.github.ccjhr.collection////PointingToDeclaration/nagare/io.github.ccjhr.collection/index.html
@@ -37,10 +39,12 @@ $dokka.location:io.github.ccjhr.collection//is/io.github.ccjhr.AssertionContext[
 $dokka.location:io.github.ccjhr.collection//isNot/io.github.ccjhr.AssertionContext[kotlin.collections.Collection[TypeParam(bounds=[kotlin.Any?])]?]#io.github.ccjhr.collection.CollectionAssertionAdjective/PointingToDeclaration/nagare/io.github.ccjhr.collection/is-not.html
 $dokka.location:io.github.ccjhr.collection/CollectionAssertionAdjective.Empty///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}nagare/io.github.ccjhr.collection/-collection-assertion-adjective/-empty/index.html
 $dokka.location:io.github.ccjhr.collection/CollectionAssertionAdjective///PointingToDeclaration/nagare/io.github.ccjhr.collection/-collection-assertion-adjective/index.html
+$dokka.location:io.github.ccjhr.collection/CollectionAssertionAdjective/entries/#/PointingToDeclaration/nagare/io.github.ccjhr.collection/-collection-assertion-adjective/entries.html
 $dokka.location:io.github.ccjhr.collection/CollectionAssertionAdjective/valueOf/#kotlin.String/PointingToDeclaration/nagare/io.github.ccjhr.collection/-collection-assertion-adjective/value-of.html
 $dokka.location:io.github.ccjhr.collection/CollectionAssertionAdjective/values/#/PointingToDeclaration/nagare/io.github.ccjhr.collection/-collection-assertion-adjective/values.html
 $dokka.location:io.github.ccjhr.collection/ContainsExactlyAssertionAdjective.InTheSameOrder///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}nagare/io.github.ccjhr.collection/-contains-exactly-assertion-adjective/-in-the-same-order/index.html
 $dokka.location:io.github.ccjhr.collection/ContainsExactlyAssertionAdjective///PointingToDeclaration/nagare/io.github.ccjhr.collection/-contains-exactly-assertion-adjective/index.html
+$dokka.location:io.github.ccjhr.collection/ContainsExactlyAssertionAdjective/entries/#/PointingToDeclaration/nagare/io.github.ccjhr.collection/-contains-exactly-assertion-adjective/entries.html
 $dokka.location:io.github.ccjhr.collection/ContainsExactlyAssertionAdjective/valueOf/#kotlin.String/PointingToDeclaration/nagare/io.github.ccjhr.collection/-contains-exactly-assertion-adjective/value-of.html
 $dokka.location:io.github.ccjhr.collection/ContainsExactlyAssertionAdjective/values/#/PointingToDeclaration/nagare/io.github.ccjhr.collection/-contains-exactly-assertion-adjective/values.html
 $dokka.location:io.github.ccjhr.collection/ContainsExactlyContext///PointingToDeclaration/nagare/io.github.ccjhr.collection/-contains-exactly-context/index.html
@@ -107,11 +111,13 @@ $dokka.location:io.github.ccjhr.number/NumberAssertionAdjectives.Negative///Poin
 $dokka.location:io.github.ccjhr.number/NumberAssertionAdjectives.Odd///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}nagare/io.github.ccjhr.number/-number-assertion-adjectives/-odd/index.html
 $dokka.location:io.github.ccjhr.number/NumberAssertionAdjectives.Positive///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}nagare/io.github.ccjhr.number/-number-assertion-adjectives/-positive/index.html
 $dokka.location:io.github.ccjhr.number/NumberAssertionAdjectives///PointingToDeclaration/nagare/io.github.ccjhr.number/-number-assertion-adjectives/index.html
+$dokka.location:io.github.ccjhr.number/NumberAssertionAdjectives/entries/#/PointingToDeclaration/nagare/io.github.ccjhr.number/-number-assertion-adjectives/entries.html
 $dokka.location:io.github.ccjhr.number/NumberAssertionAdjectives/valueOf/#kotlin.String/PointingToDeclaration/nagare/io.github.ccjhr.number/-number-assertion-adjectives/value-of.html
 $dokka.location:io.github.ccjhr.number/NumberAssertionAdjectives/values/#/PointingToDeclaration/nagare/io.github.ccjhr.number/-number-assertion-adjectives/values.html
 $dokka.location:io.github.ccjhr.number/UnsignedNumberAssertionAdjectives.Even///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}nagare/io.github.ccjhr.number/-unsigned-number-assertion-adjectives/-even/index.html
 $dokka.location:io.github.ccjhr.number/UnsignedNumberAssertionAdjectives.Odd///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}nagare/io.github.ccjhr.number/-unsigned-number-assertion-adjectives/-odd/index.html
 $dokka.location:io.github.ccjhr.number/UnsignedNumberAssertionAdjectives///PointingToDeclaration/nagare/io.github.ccjhr.number/-unsigned-number-assertion-adjectives/index.html
+$dokka.location:io.github.ccjhr.number/UnsignedNumberAssertionAdjectives/entries/#/PointingToDeclaration/nagare/io.github.ccjhr.number/-unsigned-number-assertion-adjectives/entries.html
 $dokka.location:io.github.ccjhr.number/UnsignedNumberAssertionAdjectives/valueOf/#kotlin.String/PointingToDeclaration/nagare/io.github.ccjhr.number/-unsigned-number-assertion-adjectives/value-of.html
 $dokka.location:io.github.ccjhr.number/UnsignedNumberAssertionAdjectives/values/#/PointingToDeclaration/nagare/io.github.ccjhr.number/-unsigned-number-assertion-adjectives/values.html
 $dokka.location:io.github.ccjhr.string////PointingToDeclaration/nagare/io.github.ccjhr.string/index.html
