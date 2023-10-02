@@ -10,42 +10,42 @@ fun hasLength() {
     }
 }
 
-fun isNotEmpty() {
+fun mustNotBeEmpty() {
     // given
     val obj = "test"
 
     // then
     obj mustSatisfy {
-        it isNot Empty
+        it mustNotBe Empty
     }
 }
 
-fun isNotBlank() {
+fun mustNotBeBlank() {
     // given
     val obj = "test"
 
     // then
     obj mustSatisfy {
-        it isNot Blank
+        it mustNotBe Blank
     }
 }
 
-fun isBlank() {
+fun mustBeBlank() {
     // given
     val obj = "    "
 
     // then
     obj mustSatisfy {
-        it `is` Blank
+        it mustBe Blank
     }
 }
 
-fun isEmpty() {
+fun mustBeEmpty() {
     // given
     val obj = ""
 
     // then
     obj mustSatisfy {
-        it `is` Empty
+        it mustBe Empty
     }
 }

@@ -1,22 +1,22 @@
 package io.github.ccjhr.samples.any
 
-fun isNull() {
+fun mustBeNull() {
     // given
     val obj: String? = null
 
     // then
     obj mustSatisfy {
-        it `is` Null
+        it mustBe Null
     }
 }
 
-fun isNotNull() {
+fun mustNotBeNull() {
     // given
     val obj = "test"
 
     // then
     obj mustSatisfy {
-        it isNot Null
+        it mustNotBe Null
     }
 }
 

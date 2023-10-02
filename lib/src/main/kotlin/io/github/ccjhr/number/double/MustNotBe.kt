@@ -9,17 +9,17 @@ import kotlin.test.fail
 
 /**
  * Verifies that the [Double] under test does not apply to a given [NumberAssertionAdjectives].
- * @since 2.0.0
+ * @since 4.0.0
  * @param adjective The [NumberAssertionAdjectives] that applies to the object under test.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable or non-nullable [Double].
- * @see is
- * @sample io.github.ccjhr.samples.number.double.isNotOdd
- * @sample io.github.ccjhr.samples.number.double.isNotEven
- * @sample io.github.ccjhr.samples.number.double.isPositive
- * @sample io.github.ccjhr.samples.number.double.isNegative
+ * @see mustBe
+ * @sample io.github.ccjhr.samples.number.double.mustNotBeOdd
+ * @sample io.github.ccjhr.samples.number.double.mustNotBeEven
+ * @sample io.github.ccjhr.samples.number.double.mustNotBePositive
+ * @sample io.github.ccjhr.samples.number.double.mustNotBeNegative
  */
-inline infix fun <reified T : Double?> AssertionContext<T>.isNot(adjective: NumberAssertionAdjectives) {
+inline infix fun <reified T : Double?> AssertionContext<T>.mustNotBe(adjective: NumberAssertionAdjectives) {
     expectNotNull(this.content)
 
     when (adjective) {

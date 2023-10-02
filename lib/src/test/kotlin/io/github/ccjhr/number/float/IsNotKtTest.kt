@@ -16,7 +16,7 @@ internal class IsNotKtTest {
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it isNot Odd
+                it mustNotBe Odd
             }
         }
 
@@ -34,7 +34,7 @@ internal class IsNotKtTest {
             // when
             val result = expectsException<AssertionError> {
                 obj mustSatisfy {
-                    it isNot Odd
+                    it mustNotBe Odd
                 }
             }
 
@@ -49,7 +49,7 @@ internal class IsNotKtTest {
 
             // when
             obj mustSatisfy {
-                it isNot Odd
+                it mustNotBe Odd
             }
         }
     }
@@ -64,7 +64,7 @@ internal class IsNotKtTest {
             // when
             val result = expectsException<AssertionError> {
                 obj mustSatisfy {
-                    it isNot Even
+                    it mustNotBe Even
                 }
             }
 
@@ -79,7 +79,7 @@ internal class IsNotKtTest {
 
             // when
             obj mustSatisfy {
-                it isNot Even
+                it mustNotBe Even
             }
         }
     }
@@ -94,7 +94,7 @@ internal class IsNotKtTest {
             // when
             val result = expectsException<AssertionError> {
                 obj mustSatisfy {
-                    it isNot Positive
+                    it mustNotBe Positive
                 }
             }
 
@@ -109,7 +109,7 @@ internal class IsNotKtTest {
 
             // when
             obj mustSatisfy {
-                it isNot Positive
+                it mustNotBe Positive
             }
         }
     }
@@ -124,7 +124,7 @@ internal class IsNotKtTest {
             // when
             val result = expectsException<AssertionError> {
                 obj mustSatisfy {
-                    it isNot Negative
+                    it mustNotBe Negative
                 }
             }
 
@@ -139,7 +139,7 @@ internal class IsNotKtTest {
 
             // when
             obj mustSatisfy {
-                it isNot Negative
+                it mustNotBe Negative
             }
         }
     }
