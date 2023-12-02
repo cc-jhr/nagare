@@ -9,17 +9,17 @@ import kotlin.test.fail
 
 /**
  * Verifies that the [Float] under test does not apply to a given [NumberAssertionAdjectives].
- * @since 2.0.0
+ * @since 4.0.0
  * @param adjective The [NumberAssertionAdjectives] that applies to the object under test.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable or non-nullable [Float].
- * @see is
- * @sample io.github.ccjhr.samples.number.float.isNotOdd
- * @sample io.github.ccjhr.samples.number.float.isNotEven
- * @sample io.github.ccjhr.samples.number.float.isPositive
- * @sample io.github.ccjhr.samples.number.float.isNegative
+ * @see mustBe
+ * @sample io.github.ccjhr.samples.number.float.mustNotBeOdd
+ * @sample io.github.ccjhr.samples.number.float.mustNotBeEven
+ * @sample io.github.ccjhr.samples.number.float.mustNotBePositive
+ * @sample io.github.ccjhr.samples.number.float.mustNotBeNegative
  */
-inline infix fun <reified T : Float?> AssertionContext<T>.isNot(adjective: NumberAssertionAdjectives) {
+inline infix fun <reified T : Float?> AssertionContext<T>.mustNotBe(adjective: NumberAssertionAdjectives) {
     expectNotNull(this.content)
 
     when (adjective) {

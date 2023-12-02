@@ -16,7 +16,7 @@ internal class IsNotKtTest {
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it isNot Null
+                it mustNotBe Null
             }
         }
 
@@ -31,7 +31,7 @@ internal class IsNotKtTest {
 
         // when
         obj mustSatisfy {
-            it isNot Null
+            it mustNotBe Null
         }
     }
 }

@@ -10,15 +10,15 @@ import kotlin.test.fail
 
 /**
  * Verifies that the [ULong] under test does not apply to a given [UnsignedNumberAssertionAdjectives].
- * @since 2.0.0
+ * @since 4.0.0
  * @param adjective The [UnsignedNumberAssertionAdjectives] that applies to the object under test.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable or non-nullable [ULong].
- * @see is
- * @sample io.github.ccjhr.samples.number.ulong.isNotOdd
- * @sample io.github.ccjhr.samples.number.ulong.isNotEven
+ * @see mustbe
+ * @sample io.github.ccjhr.samples.number.ulong.mustNotBeOdd
+ * @sample io.github.ccjhr.samples.number.ulong.mustNotBeEven
  */
-inline infix fun <reified T : ULong?> AssertionContext<T>.isNot(adjective: UnsignedNumberAssertionAdjectives) {
+inline infix fun <reified T : ULong?> AssertionContext<T>.mustNotBe(adjective: UnsignedNumberAssertionAdjectives) {
     expectNotNull(this.content)
 
     when (adjective) {

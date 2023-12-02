@@ -10,15 +10,15 @@ import kotlin.test.fail
 
 /**
  * Verifies that the [UInt] under test does not apply to a given [UnsignedNumberAssertionAdjectives].
- * @since 2.0.0
+ * @since 4.0.0
  * @param adjective The [UnsignedNumberAssertionAdjectives] that applies to the object under test.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable or non-nullable [UInt].
- * @see is
- * @sample io.github.ccjhr.samples.number.uint.isNotOdd
- * @sample io.github.ccjhr.samples.number.uint.isNotEven
+ * @see mustBe
+ * @sample io.github.ccjhr.samples.number.uint.mustNotBeOdd
+ * @sample io.github.ccjhr.samples.number.uint.mustNotBeEven
  */
-inline infix fun <reified T : UInt?> AssertionContext<T>.isNot(adjective: UnsignedNumberAssertionAdjectives) {
+inline infix fun <reified T : UInt?> AssertionContext<T>.mustNotBe(adjective: UnsignedNumberAssertionAdjectives) {
     expectNotNull(this.content)
 
     when (adjective) {

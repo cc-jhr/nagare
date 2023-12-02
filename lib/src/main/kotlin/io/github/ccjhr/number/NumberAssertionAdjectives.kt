@@ -3,75 +3,75 @@ package io.github.ccjhr.number
 /**
  * Adjectives that are expected to apply to any signed number.
  * @since 2.0.0
- * @see io.github.ccjhr.number.double.is
- * @see io.github.ccjhr.number.double.isNot
- * @see io.github.ccjhr.number.float.is
- * @see io.github.ccjhr.number.float.isNot
- * @see io.github.ccjhr.number.int.is
- * @see io.github.ccjhr.number.int.isNot
- * @see io.github.ccjhr.number.long.is
- * @see io.github.ccjhr.number.long.isNot
- * @see io.github.ccjhr.number.short.is
- * @see io.github.ccjhr.number.short.isNot
+ * @see io.github.ccjhr.number.double.mustBe
+ * @see io.github.ccjhr.number.double.mustNotBe
+ * @see io.github.ccjhr.number.float.mustBe
+ * @see io.github.ccjhr.number.float.mustNotBe
+ * @see io.github.ccjhr.number.int.mustBe
+ * @see io.github.ccjhr.number.int.mustNotBe
+ * @see io.github.ccjhr.number.long.mustBe
+ * @see io.github.ccjhr.number.long.mustNotBe
+ * @see io.github.ccjhr.number.short.mustBe
+ * @see io.github.ccjhr.number.short.mustNotBe
  */
 enum class NumberAssertionAdjectives {
     /**
      * @since 1.0.0
-     * @sample io.github.ccjhr.samples.number.double.isOdd
-     * @sample io.github.ccjhr.samples.number.double.isNotOdd
-     * @sample io.github.ccjhr.samples.number.float.isOdd
-     * @sample io.github.ccjhr.samples.number.float.isNotOdd
-     * @sample io.github.ccjhr.samples.number.int.isOdd
-     * @sample io.github.ccjhr.samples.number.int.isNotOdd
-     * @sample io.github.ccjhr.samples.number.long.isOdd
-     * @sample io.github.ccjhr.samples.number.long.isNotOdd
-     * @sample io.github.ccjhr.samples.number.short.isOdd
-     * @sample io.github.ccjhr.samples.number.short.isNotOdd
+     * @sample io.github.ccjhr.samples.number.double.mustBeOdd
+     * @sample io.github.ccjhr.samples.number.double.mustNotBeOdd
+     * @sample io.github.ccjhr.samples.number.float.mustBeOdd
+     * @sample io.github.ccjhr.samples.number.float.mustNotBeOdd
+     * @sample io.github.ccjhr.samples.number.int.mustBeOdd
+     * @sample io.github.ccjhr.samples.number.int.mustNotBeOdd
+     * @sample io.github.ccjhr.samples.number.long.mustBeOdd
+     * @sample io.github.ccjhr.samples.number.long.mustNotBeOdd
+     * @sample io.github.ccjhr.samples.number.short.mustBeOdd
+     * @sample io.github.ccjhr.samples.number.short.mustNotBeOdd
      */
     Odd,
 
     /**
      * @since 1.0.0
-     * @sample io.github.ccjhr.samples.number.double.isEven
-     * @sample io.github.ccjhr.samples.number.double.isNotEven
-     * @sample io.github.ccjhr.samples.number.float.isEven
-     * @sample io.github.ccjhr.samples.number.float.isNotEven
-     * @sample io.github.ccjhr.samples.number.int.isEven
-     * @sample io.github.ccjhr.samples.number.int.isNotEven
-     * @sample io.github.ccjhr.samples.number.long.isEven
-     * @sample io.github.ccjhr.samples.number.long.isNotEven
-     * @sample io.github.ccjhr.samples.number.short.isEven
-     * @sample io.github.ccjhr.samples.number.short.isNotEven
+     * @sample io.github.ccjhr.samples.number.double.mustBeEven
+     * @sample io.github.ccjhr.samples.number.double.mustNotBeEven
+     * @sample io.github.ccjhr.samples.number.float.mustBeEven
+     * @sample io.github.ccjhr.samples.number.float.mustNotBeEven
+     * @sample io.github.ccjhr.samples.number.int.mustBeEven
+     * @sample io.github.ccjhr.samples.number.int.mustNotBeEven
+     * @sample io.github.ccjhr.samples.number.long.mustBeEven
+     * @sample io.github.ccjhr.samples.number.long.mustNotBeEven
+     * @sample io.github.ccjhr.samples.number.short.mustBeEven
+     * @sample io.github.ccjhr.samples.number.short.mustNotBeEven
      */
     Even,
 
     /**
      * @since 2.0.0
-     * @sample io.github.ccjhr.samples.number.double.isPositive
-     * @sample io.github.ccjhr.samples.number.double.isNotPositive
-     * @sample io.github.ccjhr.samples.number.float.isPositive
-     * @sample io.github.ccjhr.samples.number.float.isNotPositive
-     * @sample io.github.ccjhr.samples.number.int.isPositive
-     * @sample io.github.ccjhr.samples.number.int.isNotPositive
-     * @sample io.github.ccjhr.samples.number.long.isPositive
-     * @sample io.github.ccjhr.samples.number.long.isNotPositive
-     * @sample io.github.ccjhr.samples.number.short.isPositive
-     * @sample io.github.ccjhr.samples.number.short.isNotPositive
+     * @sample io.github.ccjhr.samples.number.double.mustBePositive
+     * @sample io.github.ccjhr.samples.number.double.mustNotBePositive
+     * @sample io.github.ccjhr.samples.number.float.mustBePositive
+     * @sample io.github.ccjhr.samples.number.float.mustNotBePositive
+     * @sample io.github.ccjhr.samples.number.int.mustBePositive
+     * @sample io.github.ccjhr.samples.number.int.mustNotBePositive
+     * @sample io.github.ccjhr.samples.number.long.mustBePositive
+     * @sample io.github.ccjhr.samples.number.long.mustNotBePositive
+     * @sample io.github.ccjhr.samples.number.short.mustBePositive
+     * @sample io.github.ccjhr.samples.number.short.mustNotBePositive
      */
     Positive,
 
     /**
      * @since 2.0.0
-     * @sample io.github.ccjhr.samples.number.double.isNegative
-     * @sample io.github.ccjhr.samples.number.double.isNotNegative
-     * @sample io.github.ccjhr.samples.number.float.isNegative
-     * @sample io.github.ccjhr.samples.number.float.isNotNegative
-     * @sample io.github.ccjhr.samples.number.int.isNegative
-     * @sample io.github.ccjhr.samples.number.int.isNotNegative
-     * @sample io.github.ccjhr.samples.number.long.isNegative
-     * @sample io.github.ccjhr.samples.number.long.isNotNegative
-     * @sample io.github.ccjhr.samples.number.short.isNegative
-     * @sample io.github.ccjhr.samples.number.short.isNotNegative
+     * @sample io.github.ccjhr.samples.number.double.mustBeNegative
+     * @sample io.github.ccjhr.samples.number.double.mustNotBeNegative
+     * @sample io.github.ccjhr.samples.number.float.mustBeNegative
+     * @sample io.github.ccjhr.samples.number.float.mustNotBeNegative
+     * @sample io.github.ccjhr.samples.number.int.mustBeNegative
+     * @sample io.github.ccjhr.samples.number.int.mustNotBeNegative
+     * @sample io.github.ccjhr.samples.number.long.mustBeNegative
+     * @sample io.github.ccjhr.samples.number.long.mustNotBeNegative
+     * @sample io.github.ccjhr.samples.number.short.mustBeNegative
+     * @sample io.github.ccjhr.samples.number.short.mustNotBeNegative
      */
     Negative,
 }

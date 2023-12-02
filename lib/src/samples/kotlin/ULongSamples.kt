@@ -20,43 +20,43 @@ private fun isLessThan() {
     }
 }
 
-private fun isEven() {
+private fun mustBeEven() {
     // given
     val obj = 12uL
 
     // then
     obj mustSatisfy {
-        it `is` Even
+        it mustBe Even
     }
 }
 
-private fun isNotEven() {
+private fun mustNotBeEven() {
     // given
     val obj = 11uL
 
     // then
     obj mustSatisfy {
-        it isNot Even
+        it mustNotBe Even
     }
 }
 
-private fun isOdd() {
+private fun mustBeOdd() {
     // given
     val obj = 11uL
 
     // then
     obj mustSatisfy {
-        it `is` Odd
+        it mustBe Odd
     }
 }
 
-private fun isNotOdd() {
+private fun mustNotBeOdd() {
     // given
     val obj = 12uL
 
     // then
     obj mustSatisfy {
-        it isNot Odd
+        it mustNotBe Odd
     }
 }
 

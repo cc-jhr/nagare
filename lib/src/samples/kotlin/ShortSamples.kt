@@ -20,83 +20,83 @@ private fun isLessThan() {
     }
 }
 
-private fun isEven() {
+private fun mustBeEven() {
     // given
     val obj: Short = 12
 
     // then
     obj mustSatisfy {
-        it `is` Even
+        it mustBe Even
     }
 }
 
-private fun isNotEven() {
+private fun mustNotBeEven() {
     // given
     val obj: Short = 11
 
     // then
     obj mustSatisfy {
-        it isNot Even
+        it mustNotBe Even
     }
 }
 
-private fun isOdd() {
+private fun mustBeOdd() {
     // given
     val obj: Short = 11
 
     // then
     obj mustSatisfy {
-        it `is` Odd
+        it mustBe Odd
     }
 }
 
-private fun isNotOdd() {
+private fun mustNotBeOdd() {
     // given
     val obj: Short = 12
 
     // then
     obj mustSatisfy {
-        it isNot Odd
+        it mustNotBe Odd
     }
 }
 
-private fun isPositive() {
+private fun mustbePositive() {
     // given
     val obj: Short = 12
 
     // then
     obj mustSatisfy {
-        it `is` Positive
+        it mustBe Positive
     }
 }
 
-private fun isNotPositive() {
+private fun mustNotBePositive() {
     // given
     val obj: Short = -12
 
     // then
     obj mustSatisfy {
-        it isNot Positive
+        it mustNotBe Positive
     }
 }
 
-private fun isNegative() {
+private fun mustbeNegative() {
     // given
     val obj: Short = -12
 
     // then
     obj mustSatisfy {
-        it `is` Negative
+        it mustBe Negative
     }
 }
 
-private fun isNotNegative() {
+private fun mustNotBeNegative() {
     // given
     val obj: Short = 12
 
     // then
     obj mustSatisfy {
-        it isNot Negative
+        it mustNotBe Negative
     }
 }
 

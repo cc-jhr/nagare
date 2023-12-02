@@ -7,15 +7,15 @@ import kotlin.test.fail
 
 /**
  * Verifies that the [CharSequence] under test does not apply to a given [CharSequenceAssertionAdjective].
- * @since 1.0.0
+ * @since 4.0.0
  * @param adjective The [CharSequenceAssertionAdjective] that does not apply to the [CharSequence] under test.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable or non-nullable [CharSequence].
- * @see is
- * @sample io.github.ccjhr.samples.charsequence.isNotBlank
- * @sample io.github.ccjhr.samples.charsequence.isNotEmpty
+ * @see mustBe
+ * @sample io.github.ccjhr.samples.charsequence.mustNotBeBlank
+ * @sample io.github.ccjhr.samples.charsequence.mustNotBeEmpty
  */
-inline infix fun <reified T : CharSequence?> AssertionContext<T>.isNot(adjective: CharSequenceAssertionAdjective) {
+inline infix fun <reified T : CharSequence?> AssertionContext<T>.mustNotBe(adjective: CharSequenceAssertionAdjective) {
     expectNotNull(this.content)
 
     when (adjective) {

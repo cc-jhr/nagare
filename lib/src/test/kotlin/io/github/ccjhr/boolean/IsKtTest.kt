@@ -15,7 +15,7 @@ internal class IsKtTest {
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it `is` false
+                it mustBe false
             }
         }
 
@@ -31,7 +31,7 @@ internal class IsKtTest {
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it `is` false
+                it mustBe false
             }
         }
 
@@ -46,7 +46,7 @@ internal class IsKtTest {
 
         // when
         obj mustSatisfy {
-            it `is` true
+            it mustBe true
         }
     }
 }
