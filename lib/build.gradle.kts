@@ -37,13 +37,13 @@ tasks.withType<Test> {
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "21"
     }
 }
 
 tasks.dokkaHtml.configure {
     moduleName.set(rootProject.name)
-    outputDirectory.set(buildDir.resolve("dokka"))
+    outputDirectory.set(layout.buildDirectory.get().asFile.toPath().resolve("dokka").toFile())
     dokkaSourceSets {
         configureEach {
             includes.from(
@@ -125,14 +125,14 @@ publishing {
 }
 
 coverallsJacoco {
-    reportPath = "$buildDir/reports/jacoco/test/jacocoFullReport.xml"
+    reportPath = "${layout.buildDirectory}/reports/jacoco/test/jacocoFullReport.xml"
 }
 
 tasks.jacocoTestReport {
     reports {
         html.required.set(false)
         xml.required.set(true)
-        xml.outputLocation.set(file("$buildDir/reports/jacoco/test/jacocoFullReport.xml"))
+        xml.outputLocation.set(file("${layout.buildDirectory}/reports/jacoco/test/jacocoFullReport.xml"))
     }
     dependsOn(allprojects.map { it.tasks.named<Test>("test") })
 }
