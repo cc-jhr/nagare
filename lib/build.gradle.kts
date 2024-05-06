@@ -4,7 +4,7 @@ plugins {
     `java-library` // Apply the java-library plugin for API and implementation separation.
     `maven-publish`
     jacoco
-    id("com.github.nbaztec.coveralls-jacoco") version "1.2.19"
+    id("com.github.nbaztec.coveralls-jacoco") version "1.2.20"
 }
 
 val githubUsername by extra { System.getenv("GH_USERNAME") ?: project.findProperty("GH_USERNAME") as String? ?: "cc-jhr" }
