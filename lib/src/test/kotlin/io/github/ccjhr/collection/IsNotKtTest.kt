@@ -16,7 +16,7 @@ internal class IsNotKtTest {
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it isNot Empty
+                it mustNotBe Empty
             }
         }
 
@@ -32,7 +32,7 @@ internal class IsNotKtTest {
         // when
         val result = expectsException<AssertionError> {
             list mustSatisfy {
-                it isNot Empty
+                it mustNotBe Empty
             }
         }
 
@@ -47,7 +47,7 @@ internal class IsNotKtTest {
 
         // when
         list mustSatisfy {
-            it isNot Empty
+            it mustNotBe Empty
         }
     }
 }

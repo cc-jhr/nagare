@@ -3,8 +3,8 @@ package io.github.ccjhr.charsequence
 /**
  * Adjectives that are expected to apply to a [CharSequence].
  * @since 1.0.0
- * @see is
- * @see isNot
+ * @see mustBe
+ * @see mustNotBe
  */
 enum class CharSequenceAssertionAdjective {
     /**

@@ -1,41 +1,41 @@
 package io.github.ccjhr.samples.boolean
 
-fun isTrue() {
+fun mustBeTrue() {
     // given
     val obj = true
 
     // then
     obj mustSatisfy {
-        it `is` true
+        it mustBe true
     }
 }
 
-fun isFalse() {
+fun mustBeFalse() {
     // given
     val obj = false
 
     // then
     obj mustSatisfy {
-        it `is` false
+        it mustBe false
     }
 }
 
-fun isNotTrue() {
+fun mustNotBeTrue() {
     // given
     val obj = false
 
     // then
     obj mustSatisfy {
-        it isNot true
+        it mustNotBe true
     }
 }
 
-fun isNotFalse() {
+fun mustNotBeFalse() {
     // given
     val obj = true
 
     // then
     obj mustSatisfy {
-        it isNot false
+        it mustNotBe false
     }
 }

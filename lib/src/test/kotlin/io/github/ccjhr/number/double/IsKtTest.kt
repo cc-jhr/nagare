@@ -16,7 +16,7 @@ internal class IsKtTest {
         // when
         val result = expectsException<AssertionError> {
             obj mustSatisfy {
-                it `is` Odd
+                it mustBe Odd
             }
         }
 
@@ -34,7 +34,7 @@ internal class IsKtTest {
             // when
             val result = expectsException<AssertionError> {
                 obj mustSatisfy {
-                    it `is` Odd
+                    it mustBe Odd
                 }
             }
 
@@ -49,7 +49,7 @@ internal class IsKtTest {
 
             // when
             obj mustSatisfy {
-                it `is` Odd
+                it mustBe Odd
             }
         }
     }
@@ -64,7 +64,7 @@ internal class IsKtTest {
             // when
             val result = expectsException<AssertionError> {
                 obj mustSatisfy {
-                    it `is` Even
+                    it mustBe Even
                 }
             }
 
@@ -79,7 +79,7 @@ internal class IsKtTest {
 
             // when
             obj mustSatisfy {
-                it `is` Even
+                it mustBe Even
             }
         }
     }
@@ -94,7 +94,7 @@ internal class IsKtTest {
             // when
             val result = expectsException<AssertionError> {
                 obj mustSatisfy {
-                    it `is` Positive
+                    it mustBe Positive
                 }
             }
 
@@ -109,7 +109,7 @@ internal class IsKtTest {
 
             // when
             obj mustSatisfy {
-                it `is` Positive
+                it mustBe Positive
             }
         }
     }
@@ -124,7 +124,7 @@ internal class IsKtTest {
             // when
             val result = expectsException<AssertionError> {
                 obj mustSatisfy {
-                    it `is` Negative
+                    it mustBe Negative
                 }
             }
 
@@ -139,7 +139,7 @@ internal class IsKtTest {
 
             // when
             obj mustSatisfy {
-                it `is` Negative
+                it mustBe Negative
             }
         }
     }

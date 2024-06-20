@@ -9,15 +9,17 @@ import kotlin.test.fail
 
 /**
  * Verifies that the [Long] under test does not apply to a given [NumberAssertionAdjectives].
- * @since 2.0.0
+ * @since 4.0.0
  * @param adjective The [NumberAssertionAdjectives] that applies to the object under test.
  * @throws AssertionError In case the assertion fails.
  * @receiver Any nullable or non-nullable [Long].
- * @see is
- * @sample io.github.ccjhr.samples.number.long.isNotOdd
- * @sample io.github.ccjhr.samples.number.long.isNotEven
+ * @see mustBe
+ * @sample io.github.ccjhr.samples.number.long.mustNotBeOdd
+ * @sample io.github.ccjhr.samples.number.long.mustNotBeEven
+ * @sample io.github.ccjhr.samples.number.long.mustNotBePositive
+ * @sample io.github.ccjhr.samples.number.long.mustNotBeNegative
  */
-inline infix fun <reified T : Long?> AssertionContext<T>.isNot(adjective: NumberAssertionAdjectives) {
+inline infix fun <reified T : Long?> AssertionContext<T>.mustNotBe(adjective: NumberAssertionAdjectives) {
     expectNotNull(this.content)
 
     when (adjective) {
